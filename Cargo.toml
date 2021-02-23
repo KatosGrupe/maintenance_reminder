@@ -9,6 +9,7 @@ edition = "2018"
 [dependencies]
 log = ""
 rocket = ""
+serde = {version = "", features = ["derive"]}
 simplelog = ""
 
 [dependencies.rocket_contrib]
