@@ -13,4 +13,5 @@ RUN cargo build --release
 FROM ubuntu:latest
 WORKDIR /www
 COPY --from=builder /root/target/release/maintenance_reminder ./maintenance_reminder
+EXPOSE 8000
 CMD ["./maintenance_reminder"]
