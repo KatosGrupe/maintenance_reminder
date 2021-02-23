@@ -7,6 +7,7 @@ LABEL description="Test out docker as a repeatable build machine"
 ADD Cargo.toml ./
 ADD Cargo.lock ./
 ADD src ./src
+add templates ./templates
 
 RUN cargo build --release
 
