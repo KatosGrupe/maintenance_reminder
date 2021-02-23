@@ -1,4 +1,4 @@
-FROM rust:latest as builder
+FROM rustlang/rust:nightly as builder
 WORKDIR /root/
 
 LABEL maintainer="Ignas Lapėnas <ignas@lapenas.dev>"
