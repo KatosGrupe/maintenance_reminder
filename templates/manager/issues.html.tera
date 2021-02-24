@@ -1,0 +1,44 @@
+{% extends "manager/base" %}
+
+{% block manager_custom_style %}
+<style type="text/css" media="screen">
+</style>
+{% endblock manager_custom_style %}
+
+{% block content %}
+<h1>Gedimai</h1>
+<table>
+  <colgroup>
+    <col class="id" />
+    <col class="name" />
+    <col class="date" />
+    <col class="action" />
+  </colgroup>
+  <thead>
+    <th scope="col">ID</th>
+    <th scope="col">Ekranas</th>
+    <th scope="col">Data</th>
+    <th scope="col"><a href="/issues/add">Registruoti</a></th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>URMAS</td>
+      <td>2020-02-24 11:49</td>
+      <td>Užregistruota</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Panevezys-maxima</td>
+      <td>2020-02-20 20:49</td>
+      <td>Tvarkoma</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>MURAVA</td>
+      <td>2020-02-13 09:49</td>
+      <td>Sutvarkyta</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock content %}

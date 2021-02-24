@@ -1,0 +1,25 @@
+{% extends "base" %}
+
+{% block head %}
+<title>Vadybos vaizdas</title>
+
+{% block manager_custom_style %}
+<style type="text/css" media="screen">
+</style>
+{% endblock manager_custom_style %}
+
+{% endblock head %}
+
+{% block nav %}
+<nav>
+  <ul>
+    <li><a href="/manager/issues">Gedimai</a></li>
+    <li><a href="/manager/statistics">Statistika</a></li>
+    <li>Nustatymai</li>
+    <li>Atsijungti</li>
+  </ul>
+</nav>
+{% endblock nav %}
+
+{% block content %}
+{% endblock content %}

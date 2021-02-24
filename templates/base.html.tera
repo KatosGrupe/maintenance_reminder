@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="lt-LT">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        {% block head %}
+        <title>Gedimų sistema</title>
+        {% endblock head %}
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- TODO: Iškelti į atskirus failus style -->
+        <style type="text/css" media="screen">
+          body {
+              font-family: Arial, Helvetica, Sans-serif;
+              line-height: 1.2;
+              background-color: #F8F8F8;
+              max-width: 650px;
+              margin: 40px auto;
+          }
+
+          article {
+              margin: 20px auto;
+          }
+
+          h1 {
+              margin: 10px 40px 10px 20px;
+          }
+
+          table {
+              border-collapse: collapse;
+              border-spacing: 0;
+              width: 100%;
+          }
+
+          thead {
+              border-bottom: 2px solid #00000030;
+          }
+
+          tr {
+              border-bottom: 1px solid #00000020;
+          }
+
+          td, th {
+              padding: 5px 10px 5px 10px;
+          }
+
+          col:nth-child(2n) {
+              background-color: #00000010;
+          }
+
+          /* NAVIGATION */
+          nav ul {
+              margin: auto;
+              list-style: none;
+              background-color: #EEE;
+              font-size: 1.2em;
+          }
+
+          nav ul li {
+              display: inline-block;
+              margin-left: 10px;
+              margin-right: 10px;
+          }
+
+          nav ul li a {
+              text-decoration: none;
+              color: #000000DF;
+          }
+          nav ul li a:hover {
+              color: #000000AF
+          }
+
+        </style>
+    </head>
+    <body>
+      <!--[if lt IE 9]>
+          <p class="browserupgrade">
+            Jūs naudojate <strong>Pasenusią</strong> naršyklę. Prašau
+            <a href="http://browsehappy.com/">atsinaujinkite savo naršyklę</a>,
+            kad veiktų visas tinklalapio funkcionalumas.
+          </p>
+      <![endif]-->
+       <nav>
+         {% block nav %}
+         <ul>
+           <li>Prisijungti</li>
+         </ul>
+         {% endblock nav %}
+       </nav>
+       <article>
+         {% block content %}
+         {% endblock content %}
+       </article>
+       <footer>
+       </footer>
+    </body>
+</html>

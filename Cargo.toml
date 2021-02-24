@@ -15,4 +15,4 @@ simplelog = ""
 [dependencies.rocket_contrib]
 version = ""
 default-features = false
-features = ["tera_templates"]
+features = ["serve", "tera_templates"]

@@ -1,0 +1,12 @@
+{% extends "manager/base" %}
+
+{% block manager_custom_style %}
+<style type="text/css" media="screen">
+</style>
+{% endblock manager_custom_style %}
+
+{% block content %}
+<h1>Statistika</h1>
+
+
+{% endblock content %}
