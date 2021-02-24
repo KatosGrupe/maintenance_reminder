@@ -16,8 +16,19 @@ pub fn issues() -> Template {
     Template::render("manager/issues", &context)
 }
 
+
+//TODO: fix to use decent type and not string
+#[derive(Serialize)]
+struct StatisticsContext {
+    from_date: String,
+    to_date: String
+}
+
 #[get("/statistics")]
 pub fn statistics() -> Template {
-    let context = Context{};
+    let context = StatisticsContext{
+        from_date: "2021-01-24".to_string(),
+        to_date: "2021-02-24".to_string(),
+    };
     Template::render("manager/statistics", &context)
 }
