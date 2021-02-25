@@ -33,6 +33,11 @@ fn main() {
         .mount("/", routes![hello, template])
         .mount("/manager", routes![views::manager::index,
                                    views::manager::issues,
-                                   views::manager::statistics])
+                                   views::manager::statistics,
+                                   views::manager::settings])
+        .mount("/technician", routes![views::technician::index,
+                                      views::technician::issues,
+                                      views::technician::statistics,
+                                      views::technician::settings])
         .launch();
 }

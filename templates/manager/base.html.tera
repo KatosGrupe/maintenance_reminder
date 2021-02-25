@@ -15,8 +15,8 @@
   <ul>
     <li><a href="/manager/issues">Gedimai</a></li>
     <li><a href="/manager/statistics">Statistika</a></li>
-    <li>Nustatymai</li>
-    <li>Atsijungti</li>
+    <li><a href="/manager/settings">Nustatymai</a></li>
+    <li><a href="/">Atsijungti</a></li>
   </ul>
 </nav>
 {% endblock nav %}

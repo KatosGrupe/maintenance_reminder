@@ -32,3 +32,9 @@ pub fn statistics() -> Template {
     };
     Template::render("manager/statistics", &context)
 }
+
+#[get("/settings")]
+pub fn settings() -> Template {
+    let context = Context{};
+    Template::render("manager/settings", &context)
+}

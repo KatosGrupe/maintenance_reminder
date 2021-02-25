@@ -85,7 +85,8 @@
        <nav>
          {% block nav %}
          <ul>
-           <li>Prisijungti</li>
+           <li><a href="/manager">Prisijungti kaip vadybininkui</a></li>
+           <li><a href="/technician">Prisijungti kaip technikui</a></li>
          </ul>
          {% endblock nav %}
        </nav>
