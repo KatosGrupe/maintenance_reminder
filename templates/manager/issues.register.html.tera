@@ -1,6 +1,6 @@
-{% extends "technician/base" %}
+{% extends "manager/base" %}
 
-{% block custom_style %}
+{% block manager_custom_style %}
 <style type="text/css" media="screen">
   form label {
       display: inline-block;
@@ -20,7 +20,7 @@
       content: ":";
   }
 </style>
-{% endblock custom_style %}
+{% endblock manager_custom_style %}
 
 {% block content %}
 <h1> Gedimas: </h1>

@@ -16,6 +16,11 @@ pub fn issues() -> Template {
     Template::render("manager/issues", &context)
 }
 
+#[get("/issues/register")]
+pub fn issues_register() -> Template {
+    let context = Context{};
+    Template::render("manager/issues.register", &context)
+}
 
 //TODO: fix to use decent type and not string
 #[derive(Serialize)]

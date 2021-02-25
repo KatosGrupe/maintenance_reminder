@@ -7,7 +7,7 @@
   }
 
   td.progress {
-      color: #AA0;
+      color: #940;
   }
 
   td.done {
@@ -29,7 +29,7 @@
     <th scope="col">ID</th>
     <th scope="col">Ekranas</th>
     <th scope="col">Data</th>
-    <th scope="col"><a href="/issues/add">Registruoti</a></th>
+    <th scope="col"><a href="/manager/issues/register">Registruoti</a></th>
   </thead>
   <tbody>
     <tr>

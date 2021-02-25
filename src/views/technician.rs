@@ -22,6 +22,17 @@ pub fn issues_register() -> Template {
     Template::render("technician/issues.register", &context)
 }
 
+#[get("/issues/<id>")]
+pub fn issues_solve(id: i32) -> Template {
+    let context = Context{
+    };
+    match id {
+        1 => Template::render("technician/issues.history", &context),
+        2 => Template::render("technician/issues.solve", &context),
+        _ => Template::render("technician/issues.take", &context)
+    }
+}
+
 
 #[get("/inventory")]
 pub fn inventory() -> Template {

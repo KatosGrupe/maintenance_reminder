@@ -1,0 +1,65 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style type="text/css" media="screen">
+  form label {
+      display: inline-block;
+      text-align: right;
+      width: 160px;
+      margin-right: 10px;
+  }
+
+  form input {
+  }
+
+  form input[type="submit"] {
+      margin-left:220px;
+  }
+
+  form label::after {
+      content: ":";
+  }
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<h1> Gedimas: </h1>
+<form>
+  <p>
+    <label for="screen">Ekranas</label>
+    <input type="text" id="screen" disabled="true"
+           value="Panevezys-maxima"></input>
+  </p>
+  <p>
+    <label for="datetime">Sprendimo laikas</label>
+    <input type="datetime-local" id="datetime" ></input>
+  </p>
+  <p>
+    <label for="issue">Gedimas</label>
+    <input type="text" id="issue" disabled="true" value="Juodas ekranas"></input>
+  </p>
+  <p>
+    <label for="diagnosis">Diagnozė</label>
+    <select id="diagnosis">
+      <option>Duomenų kabelis</option>
+      <option>Moduliukas</option>
+      <option>Receiving card</option>
+      <option>Kompiuterio strigimas</option>
+      <option>Programos strigimas</option>
+      <option>Elektros dingimas</option>
+      <option>Kontroleris</option>
+      <option>Interneto modemas</option>
+      <option>Ryškumas</option>
+      <option>Spalvų kalibracija</option>
+      <option>Maitblokio gedimas</option>
+    </select>
+  </p>
+  <p>
+    <label for="comment">Pastaba</label>
+    <input type="text" id="comment"></input>
+  </p>
+  <p>
+    <input type="submit" value="Registruoti"></input>
+  </p>
+</form>
+{% endblock content %}

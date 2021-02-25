@@ -7,7 +7,7 @@
   }
 
   td.progress {
-      color: #AA0;
+      color: #940;
   }
 </style>
 {% endblock custom_style %}
