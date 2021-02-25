@@ -1,0 +1,29 @@
+{% extends "base" %}
+
+{% block head %}
+<title>Techniko vaizdas</title>
+
+{% block custom_style %}
+
+<style type="text/css" media="screen">
+</style>
+
+{% endblock custom_style %}
+
+{% endblock head %}
+
+{% block nav %}
+<nav>
+  <ul>
+    <li><a href="/technician">Pagrindinis</a></li>
+    <li><a href="/technician/issues">Gedimai</a></li>
+    <li><a href="/technician/inventory">Inventorius</a></li>
+    <li><a href="/technician/statistics">Statistika</a></li>
+    <li><a href="/technician/settings">Nustatymai</a></li>
+    <li><a href="/">Atsijungti</a></li>
+  </ul>
+</nav>
+{% endblock nav %}
+
+{% block content %}
+{% endblock content %}

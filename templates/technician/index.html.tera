@@ -1,0 +1,89 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style type="text/css" media="screen">
+  td.registered {
+      color: #A00;
+  }
+
+  td.progress {
+      color: #AA0;
+  }
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<h1> Pagrindinis </h1>
+
+<section>
+<h2>Esami gedimai:</h2>
+<table>
+  <colgroup>
+    <col class="screen">
+    <col class="status">
+    <col class="info">
+  </colgroup>
+  <thead>
+    <th scope="col">Ekranas</th>
+    <th scope="col">Statusas</th>
+    <th scope="col">Info</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Urmas</td>
+      <td class="registered">Užregistruotas</td>
+      <td><a href="/technician/issues/3">Peržiūrėti</a></td>
+    </tr>
+    <tr>
+      <td>Panevezys-maxima</td>
+      <td class="progress">Tvarkoma: Vytautas</td>
+      <td><a href="/technician/issues/2">Peržiūrėti</a></td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+<section>
+<h2>Artimiausi profilaktiniai darbai:</h2>
+<table>
+  <colgroup>
+    <col class="screen">
+    <col class="task">
+    <col class="done">
+  </colgroup>
+  <thead>
+    <th scope="col">Ekranas</th>
+    <th scope="col">Darbas</th>
+    <th scope="col">Laikas</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Murava</td>
+      <td>Patikrinti ekrano ryškumą</td>
+      <td class="registered">2021-02-20</td>
+    </tr>
+    <tr>
+      <td>Aleksotas</td>
+      <td>Ekranų kompiuterių būklė</td>
+      <td>2021-03-07</td>
+    </tr>
+    <tr>
+      <td>Aleksotas</td>
+      <td>Ekranų kompiuterių būklė</td>
+      <td>2021-03-07</td>
+    </tr>
+    <tr>
+      <td>Aleksotas</td>
+      <td>Ekranų daviklių sutikrinimas</td>
+      <td>2021-03-08</td>
+    </tr>
+    <tr>
+      <td>Aleksotas</td>
+      <td>Ekranų kompiuterių būklė</td>
+      <td>2021-03-07</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+{% endblock content %}
