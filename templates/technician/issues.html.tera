@@ -16,7 +16,9 @@
     <th scope="col">ID</th>
     <th scope="col">Ekranas</th>
     <th scope="col">Data</th>
-    <th scope="col"><a href="/issues/add">Registruoti</a></th>
+    <th scope="col">
+      <a href="/technician/issues/register">Registruoti</a>
+    </th>
   </thead>
   <tbody>
     <tr>
@@ -24,7 +26,7 @@
       <td>URMAS</td>
       <td>2020-02-24 11:49</td>
       <td class="registered">
-        <a href="technician/issues/3">Užregistruota</a>
+        <a href="/technician/issues/3">Užregistruota</a>
       </td>
     </tr>
     <tr>
@@ -32,7 +34,7 @@
       <td>Panevezys-maxima</td>
       <td>2020-02-20 20:49</td>
       <td class="progress">
-        <a href="technician/issues/2">Tvarkoma</a>
+        <a href="/technician/issues/2">Tvarkoma</a>
       </td>
     </tr>
     <tr>
@@ -40,7 +42,7 @@
       <td>MURAVA</td>
       <td>2020-02-13 09:49</td>
       <td class="done">
-        <a href="technician/issues/1">Sutvarkyta</a>
+        <a href="/technician/issues/1">Sutvarkyta</a>
       </td>
     </tr>
   </tbody>

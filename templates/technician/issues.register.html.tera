@@ -1,0 +1,30 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% block content %}
+<h1> Gedimas: </h1>
+<form>
+  <label for="screen">Ekranas</label>
+  <select id="screen">
+    <option>Murava</option>
+    <option>Akropolis</option>
+    <option>Vilkpėdė</option>
+    <option>... (ir t.t.)</option>
+  </select>
+  <label for="datetime">Registracijos laikas</label>
+  <input type="datetime-local" id="datetime"></input>
+  <label for="problem">Problema</label>
+  <select id="problem">
+    <option>Juodas ekranas</option>
+    <option>Nerodo dalis ekrano</option>
+    <option>Skiriasi moduliukų spalva</option>
+    <option>Per ryškus ekranas</option>
+    <option>Negražios spalvos</option>
+  </select>
+  <label for="comment">Pastaba</label>
+  <input type="text" id="comment"></input>
+  <button type="button" name="submit">Registruoti</button>
+</form>
+{% endblock content %}

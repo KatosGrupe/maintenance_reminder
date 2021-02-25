@@ -1,0 +1,215 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style type="text/css" media="screen">
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<h1>Statistika</h1>
+<table>
+  <colgroup>
+    <col class="name" />
+    <col class="stats" />
+    <col class="info" />
+  </colgroup>
+  <thead>
+    <th scope="col">Ekranas</th>
+    <th scope="col">Veikimo laikas (%)</th>
+    <th scope="col"></th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Murava</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Akropolis</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Vilkpėdė</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Draugystės</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Birštonas</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Savas</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Solos</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Big</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Rūta</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Centras</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Maxima</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Palanga</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Varniai</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Tvirtovė</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Aleksotas</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Zolitude</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Purvciems</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Alytus</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Kengarags</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Sarkandaugava</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Molėtų</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Ukmergės</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Ateities</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Ozo</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Spaudos Rūmai</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Pilaitės</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Marijampolė</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Žvalgų</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Pašilaičiai</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Didžioji sankryža</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Centras Deglava  11</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Centras Marijas</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Kėdainiai</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Šiaulių Akropolis</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <TR>
+      <TD>URMAS</TD>
+      <TD>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </TR>
+    <tr>
+      <td>Nicgales</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Bauskas</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+    <tr>
+      <td>Lapleša</td>
+      <td>99.995%</td>
+      <td><a href="/technician/statistics/1">info</a></td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock content %}

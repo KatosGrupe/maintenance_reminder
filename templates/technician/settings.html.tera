@@ -1,0 +1,96 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style type="text/css" media="screen">
+</style>
+{% endblock manager_custom_style %}
+
+{% block content %}
+<h1>Nustatymai</h1>
+
+<form>
+  <label for="subscription_state">Prenumeruoti laiškus?</label>
+  <select id="subscription_state" name="subscription_state">
+    <option value="subscribe_all">Visus</option>
+    <option value="subscribe_registrations">Tik registracijas</option>
+    <option value="subscribe_none">Neprenumeruoti</option>
+  </select>
+</form>
+
+<h2>Profilaktiniai darbai:</h2>
+
+<table>
+  <colgroup>
+    <col class="id"></col>
+    <col class="name"></col>
+    <col class="period"></col>
+    <col class="control"></col>
+  </colgroup>
+  <thead>
+    <th scope="col">Id</th>
+    <th scope="col">Pavadinimas</th>
+    <th scope="col">Periodas</th>
+    <th scope="col">
+      <a href="/technician/settings/preventive/new">Registruoti</a>
+    </th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Ar reikia dažyti konstrukciją, ar nėra pažeidimų</td>
+      <td>6 mėn</td>
+      <td>
+        <a href="/technician/settings/preventive/1">info</a>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Peržiūrėti iš priekinės pusės ar nėra perdegusių diodų, ir kitų gedimų kurių nesimato per kameras</td>
+      <td>3 mėn</td>
+      <td>
+        <a href="/technician/settings/preventive/1">info</a>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Peržiūrėti ar nėra paukščių lizdų  konstrukcijoje</td>
+      <td>6 mėn</td>
+      <td>
+        <a href="/technician/settings/preventive/1">info</a>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Patikrinti ar sandarios automatų ir pc dėžės</td>
+      <td>6 mėn</td>
+      <td>
+        <a href="/technician/settings/preventive/1">info</a>
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Patikrinti ekranų ryškumus vizualiai</td>
+      <td>2 mėn</td>
+      <td>
+        <a href="/technician/settings/preventive/1">info</a>
+      </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Ekrano davikliu sutikrinimas, programiškai </td>
+      <td>2 mėn</td>
+      <td>
+        <a href="/technician/settings/preventive/1">info</a>
+      </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Ekranų kompiuterių būklė, ar veikia team viewer, ar nemeta update lentelių, ar nėra pašalinių problemų</td>
+      <td>1 mėn</td>
+      <td>
+        <a href="/technician/settings/preventive/1">info</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endblock content %}

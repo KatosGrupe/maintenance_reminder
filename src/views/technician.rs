@@ -16,6 +16,19 @@ pub fn issues() -> Template {
     Template::render("technician/issues", &context)
 }
 
+#[get("/issues/register")]
+pub fn issues_register() -> Template {
+    let context = Context{};
+    Template::render("technician/issues.register", &context)
+}
+
+
+#[get("/inventory")]
+pub fn inventory() -> Template {
+    let context = Context{};
+    Template::render("technician/inventory", &context)
+}
+
 #[get("/statistics")]
 pub fn statistics() -> Template {
     let context = Context{};
