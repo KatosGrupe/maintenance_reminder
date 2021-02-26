@@ -1,0 +1,58 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style type="text/css" media="screen">
+  form label {
+      display: inline-block;
+      text-align: right;
+      width: 160px;
+      margin-right: 10px;
+  }
+
+  form input {
+  }
+
+  form input[type="submit"] {
+      margin-left:220px;
+  }
+
+  form label::after {
+      content: ":";
+  }
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<h1> Gedimas: </h1>
+<form>
+  <p>
+    <label for="camera">Kamera</label>
+    <input type="text" id="screen" disabled="true"
+           value="Kauno ofiso kamera"></input>
+  </p>
+  <p>
+    <label for="datetime">Sprendimo laikas</label>
+    <input type="datetime-local" id="datetime"></input>
+  </p>
+  <p>
+    <label for="issue">Gedimas</label>
+    <input type="text" id="issue" disabled="true" value="Pritraukėjas neveikia"></input>
+  </p>
+  <p>
+    <label for="diagnosis">Diagnozė</label>
+    <select id="diagnosis">
+      <option>Neveikia internetas</option>
+      <option>Nėra elektros</option>
+      <option>Nusimušęs ryškumas</option>
+      <option>Nusimušęs priartinimas</option>
+    </select>
+  </p>
+  <p>
+    <label for="comment">Pastaba</label>
+    <input type="text" id="comment"></input>
+  </p>
+  <p>
+    <input type="submit" value="Registruoti"></input>
+  </p>
+</form>
+{% endblock content %}

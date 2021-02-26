@@ -4,6 +4,51 @@ use serde::Serialize;
 #[derive(Serialize)]
 struct Context {}
 
+#[get("/cameras")]
+pub fn cameras() -> Template {
+    let context = Context{};
+    Template::render("technician/cameras", &context)
+}
+
+#[get("/cameras/register")]
+pub fn cameras_register() -> Template {
+    let context = Context{};
+    Template::render("technician/cameras.register", &context)
+}
+
+#[derive(Serialize)]
+struct CamerasEditContext {
+    name: String,
+}
+
+#[get("/cameras/<id>")]
+pub fn cameras_edit(id: i32) -> Template {
+    let context = match id {
+        4 => CamerasEditContext{name: "Aleksoto ekrano kamera".to_string()},
+        5 => CamerasEditContext{name: "Kauno ofiso kamera".to_string()},
+        6 => CamerasEditContext{name: "Ateities ekrano kamera".to_string()},
+        _ => CamerasEditContext{name: "".to_string()}
+    };
+
+    Template::render("technician/cameras.edit", &context)
+}
+
+#[get("/cameras/issues/register")]
+pub fn cameras_issues_register() -> Template {
+    let context = Context{};
+    Template::render("technician/cameras.issues.register", &context)
+}
+
+#[get("/cameras/issues/<id>")]
+pub fn cameras_issues_edit(id: i32) -> Template {
+    let context = Context{};
+    match id {
+        1 => Template::render("technician/cameras.issues.history", &context),
+        2 => Template::render("technician/cameras.issues.solve", &context),
+        _ => Template::render("technician/cameras.issues.react", &context)
+    }
+}
+
 #[get("/")]
 pub fn index() -> Template {
     let context = Context{};

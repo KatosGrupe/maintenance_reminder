@@ -5,6 +5,9 @@
 
 {% block content %}
 <h1> Gedimai: </h1>
+
+<h2> Ekranai: </h2>
+
 <table>
   <colgroup>
     <col class="id" />
@@ -43,6 +46,51 @@
       <td>2020-02-13 09:49</td>
       <td class="done">
         <a href="/technician/issues/1">Sutvarkyta</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2> Kameros: </h2>
+
+<table>
+  <colgroup>
+    <col class="id" />
+    <col class="name" />
+    <col class="date" />
+    <col class="action" />
+  </colgroup>
+  <thead>
+    <th scope="col">ID</th>
+    <th scope="col">Kamera</th>
+    <th scope="col">Data</th>
+    <th scope="col">
+      <a href="/technician/cameras/issues/register">Registruoti</a>
+    </th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>Aleksoto ekrano kamera</td>
+      <td>2020-02-24 11:49</td>
+      <td class="registered">
+        <a href="/technician/cameras/issues/3">Užregistruota</a>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Kauno ofiso kamera</td>
+      <td>2020-02-20 20:49</td>
+      <td class="progress">
+        <a href="/technician/cameras/issues/2">Tvarkoma: Edas</a>
+      </td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Ateities ekrano kamera</td>
+      <td>2020-02-13 09:49</td>
+      <td class="done">
+        <a href="/technician/cameras/issues/1">Sutvarkyta</a>
       </td>
     </tr>
   </tbody>

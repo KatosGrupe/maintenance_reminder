@@ -32,6 +32,7 @@
 
 {% block content %}
 <h1>Gedimai</h1>
+<p>
 <table>
   <colgroup>
     <col class="id" />
@@ -43,7 +44,9 @@
     <th scope="col">ID</th>
     <th scope="col">Ekranas</th>
     <th scope="col">Data</th>
-    <th scope="col"><a href="/manager/issues/register">Registruoti</a></th>
+    <th scope="col">
+      <a href="/manager/issues/register">Registruoti</a>
+    </th>
   </thead>
   <tbody>
     <tr>
@@ -66,4 +69,43 @@
     </tr>
   </tbody>
 </table>
+</p>
+<p>
+<table>
+  <colgroup>
+    <col class="id" />
+    <col class="name" />
+    <col class="date" />
+    <col class="action" />
+  </colgroup>
+  <thead>
+    <th scope="col">ID</th>
+    <th scope="col">Kamera</th>
+    <th scope="col">Data</th>
+    <th scope="col">
+      <a href="/manager/issues/register">Registruoti</a>
+    </th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>Aleksoto ekrano</td>
+      <td>2020-02-24 11:49</td>
+      <td class="registered">Užregistruota</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ozo ekrano</td>
+      <td>2020-02-20 20:49</td>
+      <td class="progress">Tvarkoma</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Pilaitės ekrano</td>
+      <td>2020-02-13 09:49</td>
+      <td class="done">Sutvarkyta</td>
+    </tr>
+  </tbody>
+</table>
+</p>
 {% endblock content %}

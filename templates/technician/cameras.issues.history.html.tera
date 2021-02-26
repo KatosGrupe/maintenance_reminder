@@ -1,0 +1,56 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style type="text/css" media="screen">
+  form label {
+      display: inline-block;
+      text-align: right;
+      width: 160px;
+      margin-right: 10px;
+  }
+
+  form input {
+  }
+
+  form input[type="submit"] {
+      margin-left:220px;
+  }
+
+  form label::after {
+      content: ":";
+  }
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<h1> Gedimas: </h1>
+<table>
+  <colgroup>
+    <col class="step" />
+    <col class="datetime" />
+    <col class="comment" />
+  </colgroup>
+  <thead>
+    <th scope="col">Informacija</th>
+    <th scope="col">Laikas</th>
+    <th scope="col">Pastaba</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Juodas vaizdas</td>
+      <td>2021-02-01 15:30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sureaguota</td>
+      <td>2021-02-01 15:34</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dingus elektra</td>
+      <td>2021-02-01 17:22</td>
+      <td>nutrauktas kabelis</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock content %}

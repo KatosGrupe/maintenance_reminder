@@ -23,6 +23,7 @@
   <p>
     <label for="initial_count">Kiekis</label>
     <input type="number" step="1" id="initial_count" value="1"></input>
+  </p>
   <p>
     <input type="submit" value="Pateikti"></input>
   </p>

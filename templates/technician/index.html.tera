@@ -17,30 +17,59 @@
 
 <section>
 <h2>Esami gedimai:</h2>
-<table>
-  <colgroup>
-    <col class="screen">
-    <col class="status">
-    <col class="info">
-  </colgroup>
-  <thead>
-    <th scope="col">Ekranas</th>
-    <th scope="col">Statusas</th>
-    <th scope="col">Info</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Urmas</td>
-      <td class="registered">Užregistruotas</td>
-      <td><a href="/technician/issues/3">Peržiūrėti</a></td>
-    </tr>
-    <tr>
-      <td>Panevezys-maxima</td>
-      <td class="progress">Tvarkoma: Vytautas</td>
-      <td><a href="/technician/issues/2">Peržiūrėti</a></td>
-    </tr>
-  </tbody>
-</table>
+<p>
+  <table>
+    <colgroup>
+      <col class="screen">
+      <col class="status">
+      <col class="info">
+    </colgroup>
+    <thead>
+      <th scope="col">Ekranas</th>
+      <th scope="col">Statusas</th>
+      <th scope="col">Info</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Urmas</td>
+        <td class="registered">Užregistruotas</td>
+        <td><a href="/technician/issues/3">Peržiūrėti</a></td>
+      </tr>
+      <tr>
+        <td>Panevezys-maxima</td>
+        <td class="progress">Tvarkoma: Vytautas</td>
+        <td><a href="/technician/issues/2">Peržiūrėti</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</p>
+<p>
+  <table>
+    <colgroup>
+      <col class="camera">
+      <col class="status">
+      <col class="info">
+    </colgroup>
+    <thead>
+      <th scope="col">Kamera</th>
+      <th scope="col">Statusas</th>
+      <th scope="col">Info</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Urmas</td>
+        <td class="registered">Užregistruotas</td>
+        <td><a href="/technician/issues/3">Peržiūrėti</a></td>
+      </tr>
+      <tr>
+        <td>Panevezys-maxima</td>
+        <td class="progress">Tvarkoma: Vytautas</td>
+        <td><a href="/technician/issues/2">Peržiūrėti</a></td>
+      </tr>
+    </tbody>
+  </table>
+</p>
 
 </section>
 

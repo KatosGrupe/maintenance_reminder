@@ -16,6 +16,7 @@
 <nav>
   <ul>
     <li><a href="/technician">Pagrindinis</a></li>
+    <li><a href="/technician/cameras">Kameros</a></li>
     <li><a href="/technician/issues">Gedimai</a></li>
     <li><a href="/technician/inventory">Inventorius</a></li>
     <li><a href="/technician/statistics">Statistika</a></li>

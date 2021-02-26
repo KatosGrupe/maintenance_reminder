@@ -1,0 +1,18 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% block content %}
+<h1>Registruoti naują kamerą</h1>
+<form>
+  <p>
+    <label for="name">Pavadinimas</label>
+    <input type="text" id="name"></input>
+  </p>
+  <p>
+    <input type="submit" value="Pateikti"></input>
+  </p>
+</form>
+
+{% endblock content %}

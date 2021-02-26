@@ -1,0 +1,40 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style type="text/css" media="screen">
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<h1> Gedimas: </h1>
+<form>
+  <p>
+    <label for="camera">Kamera</label>
+    <select id="camera">
+      <option>Aleksoto ekrano kamera</option>
+      <option>Kauno ofiso kamera </option>
+      <option>Ateities ekrano kamera </option>
+      <option>... (ir t.t.)</option>
+    </select>
+  </p>
+  <p>
+    <label for="datetime">Registracijos laikas</label>
+    <input type="datetime-local" id="datetime"></input>
+  </p>
+  <p>
+    <label for="problem">Problema</label>
+    <select id="problem">
+      <option>Nerodo</option>
+      <option>Blogas matomumas</option>
+      <option>Nėra vaizdo priartinimo</option>
+    </select>
+  </p>
+  <p>
+    <label for="comment">Pastaba</label>
+    <input type="text" id="comment"></input>
+  </p>
+  <p>
+    <input type="submit" value="Registruoti"></input>
+  </p>
+</form>
+{% endblock content %}
