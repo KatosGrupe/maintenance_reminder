@@ -32,7 +32,7 @@
   </p>
   <p>
     <label for="datetime">Sprendimo laikas</label>
-    <input type="datetime-local" id="datetime" ></input>
+    <input type="datetime-local" id="datetime"></input>
   </p>
   <p>
     <label for="issue">Gedimas</label>

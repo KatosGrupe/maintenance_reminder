@@ -72,7 +72,27 @@
           }
 
         </style>
+        <style type="text/css" media="screen">
+          form label {
+              display: inline-block;
+              text-align: right;
+              width: 160px;
+              margin-right: 10px;
+          }
+
+          form input {
+          }
+
+          form input[type="submit"] {
+              margin-left:220px;
+          }
+
+          form label::after {
+              content: ":";
+          }
+        </style>
     </head>
+
     <body>
       <!--[if lt IE 9]>
           <p class="browserupgrade">

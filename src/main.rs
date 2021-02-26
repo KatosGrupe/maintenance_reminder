@@ -38,6 +38,7 @@ fn main() {
                                    views::manager::settings])
         .mount("/technician", routes![views::technician::index,
                                       views::technician::inventory,
+                                      views::technician::inventory_register,
                                       views::technician::issues,
                                       views::technician::issues_register,
                                       views::technician::issues_solve,

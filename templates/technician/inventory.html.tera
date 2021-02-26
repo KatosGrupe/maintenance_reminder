@@ -16,7 +16,7 @@
     <th scope="col">ID</th>
     <th scope="col">Dalis</th>
     <th scope="col">Likutis</th>
-    <th scope="col"><a href="/issues/add">Registruoti</a></th>
+    <th scope="col"><a href="/technician/inventory/register">Registruoti</a></th>
   </thead>
   <tbody>
     <tr>

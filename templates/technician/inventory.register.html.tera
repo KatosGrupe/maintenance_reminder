@@ -1,0 +1,17 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style type="text/css" media="screen">
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<h1>Registruoti</h1>
+<form>
+  <p>
+    <label for="name">Pavadinimas</label>
+    <input type="text" id="name"></input>
+  </p>
+</form>
+
+{% endblock content %}

@@ -40,6 +40,12 @@ pub fn inventory() -> Template {
     Template::render("technician/inventory", &context)
 }
 
+#[get("/inventory/register")]
+pub fn inventory_register() -> Template {
+    let context = Context{};
+    Template::render("technician/inventory.register", &context)
+}
+
 #[get("/statistics")]
 pub fn statistics() -> Template {
     let context = Context{};
