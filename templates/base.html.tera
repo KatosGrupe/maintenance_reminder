@@ -62,15 +62,17 @@
               display: inline-block;
               margin: 10px;
           }
-
           nav ul li a {
               text-decoration: none;
+          }
+
+          nav ul li a {
               color: #000000DF;
           }
+
           nav ul li a:hover {
               color: #000000AF
           }
-
         </style>
         <style type="text/css" media="screen">
           form label {
@@ -89,6 +91,51 @@
 
           form label::after {
               content: ":";
+          }
+        </style>
+        <style type="text/css" media="screen">
+          @media (prefers-color-scheme: dark) {
+              body {
+                  background-color: #222222;
+                  color: #BBB;
+              }
+
+              nav ul {
+                  background-color: #FFFFFF20;
+              }
+
+              nav ul li a {
+                  color: #FFFFFFDF;
+              }
+
+              nav ul li a:hover {
+                  color: #FFFFFFAF;
+              }
+
+              a:visited, a:link {
+                  color: #FFFFFFBF;
+              }
+
+              thead {
+                  border-bottom: 2px solid #FFFFFF30;
+              }
+
+              tr {
+                  border-bottom: 1px solid #FFFFFF20;
+              }
+
+              td, th {
+                  padding: 5px 10px 5px 10px;
+              }
+
+              col:nth-child(2n) {
+                  background-color: #FFFFFF10;
+              }
+
+              input, select {
+                  color: #BBB;
+                  backgroud-color: #222;
+              }
           }
         </style>
     </head>
