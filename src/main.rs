@@ -39,10 +39,12 @@ fn main() {
         .mount("/technician", routes![views::technician::index,
                                       views::technician::inventory,
                                       views::technician::inventory_register,
+                                      views::technician::inventory_info,
                                       views::technician::issues,
                                       views::technician::issues_register,
                                       views::technician::issues_solve,
                                       views::technician::statistics,
+                                      views::technician::statistics_info,
                                       views::technician::settings])
         .launch();
 }

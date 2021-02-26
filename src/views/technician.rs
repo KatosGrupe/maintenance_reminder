@@ -46,10 +46,74 @@ pub fn inventory_register() -> Template {
     Template::render("technician/inventory.register", &context)
 }
 
+#[derive(Serialize)]
+struct InventoryInfoContext {
+    name: String,
+    locations: Vec<Location>
+}
+
+#[derive(Serialize)]
+struct Location {
+    id: i32,
+    location: String,
+    lc_time: String,
+}
+
+#[get("/inventory/<id>")]
+pub fn inventory_info(id: i32) -> Template {
+    let context = match id {
+        13 => InventoryInfoContext {
+            name: "AIO kompas HP Intel i5".to_string(),
+            locations: vec![
+            ]
+        },
+        22 => InventoryInfoContext {
+            name: "RAM DDR3 2200MHz".to_string(),
+            locations: vec![
+                Location {id:1,
+                          location:"Kauno ofisas".to_string(),
+                          lc_time:"2019-11-04 13:23".to_string()},
+
+                Location {id:2,
+                          location:"Kauno ofisas".to_string(),
+                          lc_time:"2019-11-04 13:24".to_string()},
+            ]
+        },
+        27 => InventoryInfoContext {
+            name: "LED plokštė S/N: xxxx".to_string(),
+            locations: vec![
+                Location {id:1,
+                          location:"Kauno ofisas".to_string(),
+                          lc_time:"2018-11-04 13:23".to_string()},
+
+                Location {id:2,
+                          location:"Kauno ofisas".to_string(),
+                          lc_time:"2018-11-04 14:24".to_string()},
+
+                Location {id:3,
+                          location:"Vilniaus ofisas".to_string(),
+                          lc_time:"2018-11-04 13:23".to_string()},
+
+                Location {id:4,
+                          location:"Vilniaus ofisas".to_string(),
+                          lc_time:"2018-11-04 14:24".to_string()},
+            ]
+        },
+        _ => InventoryInfoContext{ name: "".to_string(), locations: vec![]}
+    };
+    Template::render("technician/inventory.info", &context)
+}
+
 #[get("/statistics")]
 pub fn statistics() -> Template {
     let context = Context{};
     Template::render("technician/statistics", &context)
+}
+
+#[get("/statistics/<_id>")]
+pub fn statistics_info(_id: i32) -> Template {
+    let context = Context{};
+    Template::render("technician/statistics.info", &context)
 }
 
 #[get("/settings")]

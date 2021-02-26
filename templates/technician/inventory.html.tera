@@ -1,6 +1,12 @@
 {% extends "technician/base" %}
 
 {% block custom_style %}
+<style type="text/css" media="screen">
+  tr.no_remain {
+      background-color: #FFFFFF80;
+      color: #00000090;
+  }
+  </style>
 {% endblock custom_style %}
 
 {% block content %}
@@ -21,10 +27,10 @@
   <tbody>
     <tr>
       <td>27</td>
-      <td>LED panelė S/N: xxxxxxxxx</td>
+      <td>LED plokštė S/N: xxxxxxxxx</td>
       <td>4</td>
       <td>
-        <a href="technician/inventory/3">Info</a>
+        <a href="/technician/inventory/27">Info</a>
       </td>
     </tr>
     <tr>
@@ -32,15 +38,15 @@
       <td>RAM DDR3 2200MHz</td>
       <td>2</td>
       <td>
-        <a href="technician/inventory/2">Info</a>
+        <a href="/technician/inventory/22">Info</a>
       </td>
     </tr>
-    <tr>
+    <tr class="no_remain">
       <td>13</td>
       <td>AIO kompas HP Intel i5</td>
-      <td>1</td>
+      <td>0</td>
       <td>
-        <a href="technician/inventory/1">Info</a>
+        <a href="/technician/inventory/13">Info</a>
       </td>
     </tr>
   </tbody>

@@ -1,0 +1,34 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style type="text/css" media="screen">
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<h1>Statistika: Murava</h1>
+<p>Kokia statistika rodyt?</p>
+<table>
+  <colgroup>
+    <col class="issue">
+    <col class="registration_time">
+    <col class="reaction_time">
+    <col class="resolve_time">
+  </colgroup>
+  <thead>
+    <th scope="col">Klaida</th>
+    <th scope="col">Registracija</th>
+    <th scope="col">Reakcija</th>
+    <th scope="col">Sprendimas</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Juodas ekranas</td>
+      <td>2020-02-15 22:00</td>
+      <td>2020-03-11 12:00</td>
+      <td>2020-04-11 08:00</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock content %}

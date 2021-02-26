@@ -6,12 +6,25 @@
 {% endblock custom_style %}
 
 {% block content %}
-<h1>Registruoti</h1>
+<h1>Registruoti naują daiktą</h1>
 <form>
   <p>
     <label for="name">Pavadinimas</label>
-    <input type="text" id="name"></input>
+    <input type="text" id="name">(Autocomplete)</input>
+  </p>
+  <p>
+    <label for="location">Lokacija</label>
+    <input type="text" id="location">(Autocomplete)</input>
+  </p>
+  <p>
+    <label for="write_off">Nurašymo data</label>
+    <input type="date" id="write_off">(Today + 2 years)</input>
+  </p>
+  <p>
+    <label for="initial_count">Kiekis</label>
+    <input type="number" step="1" id="initial_count" value="1"></input>
+  <p>
+    <input type="submit" value="Pateikti"></input>
   </p>
 </form>
-
 {% endblock content %}

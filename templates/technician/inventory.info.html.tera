@@ -1,0 +1,37 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style type="text/css" media="screen">
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<h1>{{name}}</h1>
+<table>
+  <colgroup>
+    <col class="id">
+    <col class="location">
+    <col class="laikas">
+    <col class="change">
+  </colgroup>
+  <thead>
+    <th scope="col">Id</th>
+    <th scope="col">Lokacija</th>
+    <th scope="col">Laikas</th>
+    <th scope="col">Keisti</th>
+  </thead>
+  <tbody>
+    {% for location in locations %}
+    <tr>
+      <td>{{ location.id }}</td>
+      <td>{{ location.location }}</td>
+      <td>{{ location.lc_time }}</td>
+      <td>
+        <a href="/technician/inventory/3/{{location.id}}">Peržiūrėti</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock content %}
