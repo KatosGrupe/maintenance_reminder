@@ -58,13 +58,13 @@
     </thead>
     <tbody>
       <tr>
-        <td>Urmas</td>
+        <td>Aleksoto ekrano kamera</td>
         <td class="registered">Užregistruotas</td>
         <td><a href="/technician/issues/3">Peržiūrėti</a></td>
       </tr>
       <tr>
-        <td>Panevezys-maxima</td>
-        <td class="progress">Tvarkoma: Vytautas</td>
+        <td>Kauno ofiso kamera</td>
+        <td class="progress">Tvarkoma: Edas</td>
         <td><a href="/technician/issues/2">Peržiūrėti</a></td>
       </tr>
     </tbody>

@@ -106,7 +106,7 @@
     <th scope="col">Id</th>
     <th scope="col">Pavadinimas</th>
     <th scope="col">
-      <a href="/technician/cameras/issues/new">Registruoti</a>
+      <a href="/technician/camera_issues/register">Registruoti</a>
     </th>
   </thead>
   <tbody>
@@ -114,21 +114,21 @@
       <td>1</td>
       <td>Nerodo</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/camera_issues/1">info</a>
       </td>
     </tr>
     <tr>
       <td>2</td>
       <td>Blogas matomumas</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/camera_issues/1">info</a>
       </td>
     </tr>
     <tr>
       <td>3</td>
       <td>Nėra vaizdo priartinimo</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/camera_issues/1">info</a>
       </td>
     </tr>
   </tbody>
@@ -144,7 +144,7 @@
     <th scope="col">Id</th>
     <th scope="col">Pavadinimas</th>
     <th scope="col">
-      <a href="/technician/cameras/issues/new">Registruoti</a>
+      <a href="/technician/camera_diagnoses/new">Registruoti</a>
     </th>
   </thead>
   <tbody>
@@ -152,28 +152,28 @@
       <td>1</td>
       <td>Neveikia internetas</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/camera_diagnoses/new">info</a>
       </td>
     </tr>
     <tr>
       <td>2</td>
       <td>Nėra elektros</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/camera_diagnoses/new">info</a>
       </td>
     </tr>
     <tr>
       <td>3</td>
       <td>Nusimušęs ryškumas</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/camera_diagnoses/new">info</a>
       </td>
     </tr>
     <tr>
       <td>4</td>
       <td>Nusimušęs ryškumas</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/camera_diagnoses/new">info</a>
       </td>
     </tr>
   </tbody>
@@ -190,7 +190,7 @@
     <th scope="col">Id</th>
     <th scope="col">Pavadinimas</th>
     <th scope="col">
-      <a href="/technician/cameras/issues/new">Registruoti</a>
+      <a href="/technician/screen_issues/new">Registruoti</a>
     </th>
   </thead>
   <tbody>
@@ -198,35 +198,35 @@
       <td>1</td>
       <td>Juodas ekranas</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/screen_issues/1">info</a>
       </td>
     </tr>
     <tr>
       <td>2</td>
       <td>Nerodo dalis ekrano</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/screen_issues/1">info</a>
       </td>
     </tr>
     <tr>
       <td>3</td>
       <td>Skiriasi moduliukų spalva</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/screen_issues/1">info</a>
       </td>
     </tr>
     <tr>
       <td>4</td>
       <td>Per ryškus ekranas</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/screen_issues/1">info</a>
       </td>
     </tr>
     <tr>
       <td>5</td>
       <td>Per ryškus ekranas</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/screen_issues/1">info</a>
       </td>
     </tr>
   </tbody>
@@ -242,7 +242,7 @@
     <th scope="col">Id</th>
     <th scope="col">Pavadinimas</th>
     <th scope="col">
-      <a href="/technician/cameras/issues/new">Registruoti</a>
+      <a href="/technician/screen_diagnosis/register">Registruoti</a>
     </th>
   </thead>
   <tbody>
@@ -250,35 +250,35 @@
       <td>1</td>
       <td>Duomenų kabelis</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/screen_diagnosis/1">info</a>
       </td>
     </tr>
     <tr>
       <td>2</td>
       <td>Moduliukas</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/screen_diagnosis/1">info</a>
       </td>
     </tr>
     <tr>
       <td>3</td>
       <td>Receiving card</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/screen_diagnosis/1">info</a>
       </td>
     </tr>
     <tr>
       <td>4</td>
       <td>Kompiuterio strigimas</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/screen_diagnosis/1">info</a>
       </td>
     </tr>
     <tr>
       <td>5</td>
       <td>Programos strigimas</td>
       <td>
-        <a href="/technician/cameras/issues/1">info</a>
+        <a href="/technician/screen_diagnosis/1">info</a>
       </td>
     </tr>
   </tbody>

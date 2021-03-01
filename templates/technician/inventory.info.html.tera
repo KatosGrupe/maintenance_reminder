@@ -12,13 +12,15 @@
     <col class="id">
     <col class="location">
     <col class="laikas">
-    <col class="change">
+    <col class="controls">
   </colgroup>
   <thead>
     <th scope="col">Id</th>
     <th scope="col">Lokacija</th>
     <th scope="col">Laikas</th>
-    <th scope="col">Keisti</th>
+    <th scope="col">
+      <a href="/technician/inventory/register">Registruoti</a>
+    </th>
   </thead>
   <tbody>
     {% for location in locations %}

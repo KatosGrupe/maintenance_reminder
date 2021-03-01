@@ -43,7 +43,7 @@ pub fn cameras_issues_register() -> Template {
 pub fn cameras_issues_edit(id: i32) -> Template {
     let context = Context{};
     match id {
-        1 => Template::render("technician/cameras.issues.history", &context),
+        3 => Template::render("technician/cameras.issues.history", &context),
         2 => Template::render("technician/cameras.issues.solve", &context),
         _ => Template::render("technician/cameras.issues.react", &context)
     }
@@ -165,4 +165,10 @@ pub fn statistics_info(_id: i32) -> Template {
 pub fn settings() -> Template {
     let context = Context{};
     Template::render("technician/settings", &context)
+}
+
+#[get("/camera_issues/register")]
+pub fn settings_edit() -> Template {
+    let context = Context{};
+    Template::render("technician/settings.edit", &context)
 }

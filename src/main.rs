@@ -50,6 +50,7 @@ fn main() {
                                       views::technician::issues_solve,
                                       views::technician::statistics,
                                       views::technician::statistics_info,
-                                      views::technician::settings])
+                                      views::technician::settings,
+                                      views::technician::settings_edit])
         .launch();
 }
