@@ -19,6 +19,7 @@
   form label::after {
       content: ":";
   }
+
 </style>
 {% endblock manager_custom_style %}
 
@@ -35,8 +36,8 @@
     </select>
   </p>
   <p>
-    <label for="datetime">Registracijos laikas</label>
-    <input type="datetime-local" id="datetime">(Žiūrėti per Chrome)
+    <label for="datetime">Gedimo laikas</label>
+    <input type="datetime-local" id="datetime" value="{{current_datetime}}">
   </p>
   <p>
     <label for="problem">Problema</label>

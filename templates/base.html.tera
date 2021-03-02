@@ -138,6 +138,30 @@
               }
           }
         </style>
+        <style media="screen">
+          label.tooltip span.tooltiptext {
+              visibility: hidden;
+              background-color: #FFF;
+              color: #222;
+              text-align: center;
+              padding: 5px 10px 5px 10px; 
+              border: solid 1px #000;
+              border-radius: 3px;
+
+              position: absolute;
+              z-index: 1;
+              bottom: 100%;
+              left: 50%;
+          }
+
+          label.tooltip {
+              position: relative;
+          }
+
+          label.tooltip:hover .tooltiptext {
+              visibility: visible;
+          }
+        </style>
     </head>
 
     <body>

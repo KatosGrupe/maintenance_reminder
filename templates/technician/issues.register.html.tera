@@ -1,8 +1,6 @@
 {% extends "technician/base" %}
 
 {% block custom_style %}
-<style type="text/css" media="screen">
-</style>
 {% endblock custom_style %}
 
 {% block content %}
@@ -18,8 +16,8 @@
     </select>
   </p>
   <p>
-    <label for="datetime">Registracijos laikas</label>
-    <input type="datetime-local" id="datetime">
+    <label for="issue_ts">Gedimo laikas</label>
+    <input type="datetime-local" id="issue_ts" value="{{current_datetime}}">
   </p>
   <p>
     <label for="problem">Problema</label>

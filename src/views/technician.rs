@@ -4,6 +4,11 @@ use serde::Serialize;
 #[derive(Serialize)]
 struct Context {}
 
+#[derive(Serialize)]
+struct IssuesRegisterContext {
+    current_datetime: String
+}
+
 #[get("/cameras")]
 pub fn cameras() -> Template {
     let context = Context{};
@@ -35,15 +40,19 @@ pub fn cameras_edit(id: i32) -> Template {
 
 #[get("/cameras/issues/register")]
 pub fn cameras_issues_register() -> Template {
-    let context = Context{};
+    let context = IssuesRegisterContext{
+        current_datetime: Local::now().format("%Y-%m-%dT%H:%M:%S").to_string()
+    };
     Template::render("technician/cameras.issues.register", &context)
 }
 
 #[get("/cameras/issues/<id>")]
 pub fn cameras_issues_edit(id: i32) -> Template {
-    let context = Context{};
+    let context = IssuesRegisterContext{
+        current_datetime: Local::now().format("%Y-%m-%dT%H:%M:%S").to_string()
+    };
     match id {
-        3 => Template::render("technician/cameras.issues.history", &context),
+        1 => Template::render("technician/cameras.issues.history", &context),
         2 => Template::render("technician/cameras.issues.solve", &context),
         _ => Template::render("technician/cameras.issues.react", &context)
     }
@@ -61,15 +70,26 @@ pub fn issues() -> Template {
     Template::render("technician/issues", &context)
 }
 
+
+use chrono::prelude::*;
+
 #[get("/issues/register")]
 pub fn issues_register() -> Template {
-    let context = Context{};
+    let context = IssuesRegisterContext{
+        current_datetime: Local::now().format("%Y-%m-%dT%H:%M:%S").to_string()
+    };
     Template::render("technician/issues.register", &context)
+}
+
+#[derive(Serialize)]
+struct IssuesSolveContext {
+    current_datetime: String,
 }
 
 #[get("/issues/<id>")]
 pub fn issues_solve(id: i32) -> Template {
-    let context = Context{
+    let context = IssuesSolveContext {
+        current_datetime: Local::now().format("%Y-%m-%dT%H:%M:%S").to_string()
     };
     match id {
         1 => Template::render("technician/issues.history", &context),
@@ -169,6 +189,8 @@ pub fn settings() -> Template {
 
 #[get("/camera_issues/register")]
 pub fn settings_edit() -> Template {
-    let context = Context{};
+    let context = IssuesSolveContext {
+        current_datetime: Local::now().format("%Y-%m-%dT%H:%M:%S").to_string()
+    };
     Template::render("technician/settings.edit", &context)
 }

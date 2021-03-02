@@ -1,3 +1,4 @@
+use chrono::prelude::*;
 use rocket_contrib::templates::Template;
 use serde::Serialize;
 
@@ -16,9 +17,16 @@ pub fn issues() -> Template {
     Template::render("manager/issues", &context)
 }
 
+#[derive(Serialize)]
+struct IssuesRegisterContext {
+    current_datetime: String
+}
+
 #[get("/issues/register")]
 pub fn issues_register() -> Template {
-    let context = Context{};
+    let context = IssuesRegisterContext{
+        current_datetime: Local::now().format("%Y-%m-%dT%H:%M:%S").to_string()
+    };
     Template::render("manager/issues.register", &context)
 }
 

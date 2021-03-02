@@ -34,7 +34,7 @@
   </p>
   <p>
     <label for="datetime">Reakcijos laikas</label>
-    <input type="datetime-local" id="datetime" value="2020-12-12 14:10" disabled>
+    <input type="datetime-local" id="datetime" value="{{current_datetime}}" disabled>
   </p>
   <p>
     <label for="issue">Gedimas</label>

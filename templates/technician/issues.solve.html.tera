@@ -32,7 +32,8 @@
   </p>
   <p>
     <label for="datetime">Sprendimo laikas</label>
-    <input type="datetime-local" id="datetime">
+    <input type="datetime-local" id="datetime"
+           value="{{current_datetime}}">
   </p>
   <p>
     <label for="issue">Gedimas</label>
