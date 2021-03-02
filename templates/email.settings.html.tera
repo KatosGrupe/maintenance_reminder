@@ -1,0 +1,41 @@
+<form>
+  <h2>Laiškų prenumerata</h2>
+  <h3>Kameros</h3>
+  <p>
+    <label for="ss_camera_issues_new">
+      Užregistravus naują gedimą</label>
+    <input type="checkbox" id="ss_camera_issues_new"
+           value="new_camera_issues_new" checked>
+  </p>
+  <p>
+    <label for="ss_camera_issues_change">
+      Pasikeitus gedimo statusui</label>
+    <input type="checkbox" id="ss_camera_issues_change"
+           value="ss_camera_issues_change" checked>
+  </p>
+  <p>
+    <label for="ss_camera_issues_solve">
+      Išsprendus gedimą</label>
+    <input type="checkbox" id="ss_camera_issues_change"
+           value="ss_camera_issues_change" checked>
+  </p>
+  <h3>Ekranai</h3>
+  <p>
+    <label for="ss_screen_issues_new">
+      Užregistravus naują gedimą</label>
+    <input type="checkbox" id="ss_screen_issues_new"
+           value="new_screen_issues_new" checked>
+  </p>
+  <p>
+    <label for="ss_screen_issues_change">
+      Pasikeitus gedimo statusui</label>
+    <input type="checkbox" id="ss_screen_issues_change"
+           value="ss_screen_issues_change" checked>
+  </p>
+  <p>
+    <label for="ss_screen_issues_solve">
+      Išsprendus gedimą</label>
+    <input type="checkbox" id="ss_screen_issues_change"
+           value="ss_screen_issues_change" checked>
+  </p>
+</form>

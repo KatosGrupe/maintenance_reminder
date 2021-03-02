@@ -1,21 +1,11 @@
 {% extends "technician/base" %}
 
 {% block custom_style %}
-<style media="screen">
-</style>
 {% endblock manager_custom_style %}
 
 {% block content %}
 <h1>Nustatymai</h1>
-
-<form>
-  <label for="subscription_state">Prenumeruoti laiškus?</label>
-  <select id="subscription_state" name="subscription_state">
-    <option value="subscribe_all">Visus</option>
-    <option value="subscribe_registrations">Tik registracijas</option>
-    <option value="subscribe_none">Neprenumeruoti</option>
-  </select>
-</form>
+{% include "email.settings" %}
 
 <h2>Profilaktiniai darbai:</h2>
 
