@@ -36,7 +36,7 @@
   </p>
   <p>
     <label for="datetime">Registracijos laikas</label>
-    <input type="datetime-local" id="datetime"></input>(Žiūrėti per Chrome)
+    <input type="datetime-local" id="datetime">(Žiūrėti per Chrome)
   </p>
   <p>
     <label for="problem">Problema</label>
@@ -50,10 +50,10 @@
   </p>
   <p>
     <label for="comment">Pastaba</label>
-    <input type="text" id="comment"></input>
+    <input type="text" id="comment">
   </p>
   <p>
-    <input type="submit" value="Registruoti"></input>
+    <input type="submit" value="Registruoti">
   </p>
 </form>
 {% endblock content %}

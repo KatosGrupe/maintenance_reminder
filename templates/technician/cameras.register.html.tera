@@ -8,10 +8,10 @@
 <form>
   <p>
     <label for="name">Pavadinimas</label>
-    <input type="text" id="name"></input>
+    <input type="text" id="name">
   </p>
   <p>
-    <input type="submit" value="Pateikti"></input>
+    <input type="submit" value="Pateikti">
   </p>
 </form>
 

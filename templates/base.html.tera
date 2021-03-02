@@ -11,7 +11,7 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <!-- TODO: Iškelti į atskirus failus style -->
-        <style type="text/css" media="screen">
+        <style media="screen">
           body {
               font-family: Arial, Helvetica, Sans-serif;
               line-height: 1.2;
@@ -74,7 +74,7 @@
               color: #000000AF
           }
         </style>
-        <style type="text/css" media="screen">
+        <style media="screen">
           form label {
               display: inline-block;
               text-align: right;
@@ -93,7 +93,7 @@
               content: ":";
           }
         </style>
-        <style type="text/css" media="screen">
+        <style media="screen">
           @media (prefers-color-scheme: dark) {
               body {
                   background-color: #222222;
@@ -134,7 +134,7 @@
 
               input, select {
                   color: #BBB;
-                  backgroud-color: #222;
+                  background-color: #222;
               }
           }
         </style>
@@ -152,12 +152,14 @@
          {% block nav %}
          <ul>
            <li><a href="/manager">Prisijungti kaip vadybininkui</a></li>
+           <li><a href="/super_manager">Prisijungti kaip super-vadybininkui</a><li>
            <li><a href="/technician">Prisijungti kaip technikui</a></li>
          </ul>
          {% endblock nav %}
        </nav>
        <article>
          {% block content %}
+         <h1>Technikų web'o maketas</h1>
          {% endblock content %}
        </article>
        <footer>

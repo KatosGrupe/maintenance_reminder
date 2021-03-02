@@ -10,10 +10,10 @@
 <form>
   <p>
     <label for="name">Pavadinimas</label>
-    <input type="text" id="name" value=""></input>
+    <input type="text" id="name" value="">
   </p>
   <p>
-    <input type="submit" value="Pateikti"></input>
+    <input type="submit" value="Pateikti">
   </p>
 </form>
 {% endblock content %}

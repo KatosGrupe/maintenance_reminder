@@ -1,4 +1,4 @@
-{% extends "manager/base" %}
+{http://localhost:8000/technician% extends "manager/base" %}
 
 {% block manager_custom_style %}
 <style type="text/css" media="screen">
@@ -41,12 +41,14 @@
     <col class="action" />
   </colgroup>
   <thead>
-    <th scope="col">ID</th>
-    <th scope="col">Ekranas</th>
-    <th scope="col">Data</th>
-    <th scope="col">
-      <a href="/manager/issues/register">Registruoti</a>
-    </th>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Ekranas</th>
+      <th scope="col">Data</th>
+      <th scope="col">
+        <a href="/manager/issues/register">Registruoti</a>
+      </th>
+    </tr>
   </thead>
   <tbody>
     <tr>

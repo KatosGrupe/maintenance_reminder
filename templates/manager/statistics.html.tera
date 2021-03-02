@@ -16,17 +16,17 @@
     <input type="date"
            id="from"
            name="from_date"
-           value="{{from_date}}"></input>
+           value="{{from_date}}">
   </p>
   <p>
     <label for="from">Iki</label>
     <input type="date"
            id="to"
            name="to_date"
-           value="{{to_date}}"></input>
+           value="{{to_date}}">
   </p>
   <p>
-    <input type="submit" value="Atnaujinti"></input>
+    <input type="submit" value="Atnaujinti">
   </p>
 </form>
 <table>
@@ -35,8 +35,10 @@
     <col class="stats" />
   </colgroup>
   <thead>
+    <tr>
     <th scope="col">Ekranas</th>
     <th scope="col">Veikimo laikas (%)</th>
+    </tr>
   </thead>
   <tbody>
     <tr>

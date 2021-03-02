@@ -1,7 +1,7 @@
 {% extends "technician/base" %}
 
 {% block custom_style %}
-<style type="text/css" media="screen">
+<style media="screen">
 </style>
 {% endblock manager_custom_style %}
 
@@ -21,18 +21,20 @@
 
 <table>
   <colgroup>
-    <col class="id"></col>
-    <col class="name"></col>
-    <col class="period"></col>
-    <col class="control"></col>
+    <col class="id">
+    <col class="name">
+    <col class="period">
+    <col class="control">
   </colgroup>
   <thead>
-    <th scope="col">Id</th>
-    <th scope="col">Pavadinimas</th>
-    <th scope="col">Periodas</th>
-    <th scope="col">
-      <a href="/technician/settings/preventive/new">Registruoti</a>
-    </th>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Pavadinimas</th>
+      <th scope="col">Periodas</th>
+      <th scope="col">
+        <a href="/technician/settings/preventive/new">Registruoti</a>
+      </th>
+    </tr>
   </thead>
   <tbody>
     <tr>
@@ -182,16 +184,18 @@
 <h3>Problemos</h3>
 <table>
   <colgroup>
-    <col class="id"></col>
-    <col class="name"></col>
-    <col class="control"></col>
+    <col class="id"/>
+    <col class="name"/>
+    <col class="control"/>
   </colgroup>
   <thead>
-    <th scope="col">Id</th>
-    <th scope="col">Pavadinimas</th>
-    <th scope="col">
-      <a href="/technician/screen_issues/new">Registruoti</a>
-    </th>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Pavadinimas</th>
+      <th scope="col">
+        <a href="/technician/screen_issues/new">Registruoti</a>
+      </th>
+    </tr>
   </thead>
   <tbody>
     <tr>

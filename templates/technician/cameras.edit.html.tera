@@ -1,7 +1,7 @@
 {% extends "technician/base" %}
 
 {% block custom_style %}
-<style type="text/css" media="screen">
+<style media="screen">
   h2 {
       font-size: 1.2em;
   }
@@ -17,17 +17,17 @@
 <form>
   <p>
     <label for="name">Pavadinimas</label>
-    <input type="text" id="name" value="{{name}}"></input>
+    <input type="text" id="name" value="{{name}}">
   </p>
   <p>
-    <input type="submit" value="Pateikti"></input>
+    <input type="submit" value="Pateikti">
   </p>
 </form>
 
 <h2> Kiti veiksmai </h2>
 <form>
   <p>
-    <input class="other" type="submit" value="Trinti"></input>
+    <input class="other" type="submit" value="Trinti">
   </p>
 </form>
 

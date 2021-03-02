@@ -10,22 +10,22 @@
 <form>
   <p>
     <label for="name">Pavadinimas</label>
-    <input type="text" id="name">(Autocomplete)</input>
+    <input type="text" id="name">(Autocomplete)
   </p>
   <p>
     <label for="location">Lokacija</label>
-    <input type="text" id="location">(Autocomplete)</input>
+    <input type="text" id="location">(Autocomplete)
   </p>
   <p>
     <label for="write_off">Nurašymo data</label>
-    <input type="date" id="write_off">(Today + 2 years)</input>
+    <input type="date" id="write_off">(Today + 2 years)
   </p>
   <p>
     <label for="initial_count">Kiekis</label>
-    <input type="number" step="1" id="initial_count" value="1"></input>
+    <input type="number" step="1" id="initial_count" value="1">
   </p>
   <p>
-    <input type="submit" value="Pateikti"></input>
+    <input type="submit" value="Pateikti">
   </p>
 </form>
 {% endblock content %}

@@ -27,23 +27,25 @@
 <form>
   <p>
     <label for="screen">Ekranas</label>
-    <input type="text" id="screen" disabled="true"
-           value="Panevezys-maxima"></input>
+    <input type="text"
+           id="screen"
+           disabled
+           value="Panevezys-maxima">
   </p>
   <p>
     <label for="datetime">Reakcijos laikas</label>
-    <input type="datetime-local" id="datetime" value="2020-12-12 14:10" disabled="true"></input>
+    <input type="datetime-local" id="datetime" value="2020-12-12 14:10" disabled>
   </p>
   <p>
     <label for="issue">Gedimas</label>
-    <input type="text" id="issue" disabled="true" value="Juodas ekranas"></input>
+    <input type="text" id="issue" disabled value="Juodas ekranas">
   </p>
   <p>
     <label for="comment">Pastaba</label>
-    <input type="text" id="comment"></input>
+    <input type="text" id="comment">
   </p>
   <p>
-    <input type="submit" value="Sureaguoti"></input>
+    <input type="submit" value="Sureaguoti">
   </p>
 </form>
 {% endblock content %}

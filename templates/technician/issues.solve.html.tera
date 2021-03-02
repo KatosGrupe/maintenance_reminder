@@ -27,16 +27,16 @@
 <form>
   <p>
     <label for="screen">Ekranas</label>
-    <input type="text" id="screen" disabled="true"
-           value="Panevezys-maxima"></input>
+    <input type="text" id="screen" disabled
+           value="Panevezys-maxima">
   </p>
   <p>
     <label for="datetime">Sprendimo laikas</label>
-    <input type="datetime-local" id="datetime"></input>
+    <input type="datetime-local" id="datetime">
   </p>
   <p>
     <label for="issue">Gedimas</label>
-    <input type="text" id="issue" disabled="true" value="Juodas ekranas"></input>
+    <input type="text" id="issue" disabled value="Juodas ekranas">
   </p>
   <p>
     <label for="diagnosis">Diagnozė</label>
@@ -56,10 +56,10 @@
   </p>
   <p>
     <label for="comment">Pastaba</label>
-    <input type="text" id="comment"></input>
+    <input type="text" id="comment">
   </p>
   <p>
-    <input type="submit" value="Registruoti"></input>
+    <input type="submit" value="Registruoti">
   </p>
 </form>
 {% endblock content %}

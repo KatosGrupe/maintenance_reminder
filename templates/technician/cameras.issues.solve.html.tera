@@ -27,16 +27,16 @@
 <form>
   <p>
     <label for="camera">Kamera</label>
-    <input type="text" id="screen" disabled="true"
-           value="Kauno ofiso kamera"></input>
+    <input type="text" id="screen" disabled
+           value="Kauno ofiso kamera">
   </p>
   <p>
     <label for="datetime">Sprendimo laikas</label>
-    <input type="datetime-local" id="datetime"></input>
+    <input type="datetime-local" id="datetime">
   </p>
   <p>
     <label for="issue">Gedimas</label>
-    <input type="text" id="issue" disabled="true" value="Pritraukėjas neveikia"></input>
+    <input type="text" id="issue" disabled value="Pritraukėjas neveikia">
   </p>
   <p>
     <label for="diagnosis">Diagnozė</label>
@@ -49,10 +49,10 @@
   </p>
   <p>
     <label for="comment">Pastaba</label>
-    <input type="text" id="comment"></input>
+    <input type="text" id="comment">
   </p>
   <p>
-    <input type="submit" value="Registruoti"></input>
+    <input type="submit" value="Registruoti">
   </p>
 </form>
 {% endblock content %}
