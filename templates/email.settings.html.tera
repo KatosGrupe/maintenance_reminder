@@ -38,4 +38,5 @@
     <input type="checkbox" id="ss_screen_issues_change"
            value="ss_screen_issues_change" checked>
   </p>
+  <input type="submit" value="Saugoti">
 </form>

@@ -76,41 +76,54 @@
 <section>
 <h2>Artimiausi profilaktiniai darbai:</h2>
 <table>
-  <colgroup>
-    <col class="screen">
-    <col class="task">
-    <col class="done">
-  </colgroup>
   <thead>
-    <th scope="col">Ekranas</th>
-    <th scope="col">Darbas</th>
-    <th scope="col">Laikas</th>
+    <tr>
+    <th>Ekranas</th>
+    <th>Darbas</th>
+    <th>Laikas</th>
+    <th></th>
+    </tr>
   </thead>
   <tbody>
     <tr>
       <td>Murava</td>
       <td>Patikrinti ekrano ryškumą</td>
       <td class="registered">2021-02-20</td>
+      <td>
+        <a href="/technician/screens/1/preventitive/1">Atnaujinti</a>
+      </td>
     </tr>
     <tr>
       <td>Aleksotas</td>
       <td>Ekranų kompiuterių būklė</td>
       <td>2021-03-07</td>
+      <td>
+        <a href="/technician/screens/1/preventitive/1">Atnaujinti</a>
+      </td>
     </tr>
     <tr>
       <td>Aleksotas</td>
       <td>Ekranų kompiuterių būklė</td>
       <td>2021-03-07</td>
+      <td>
+        <a href="/technician/screens/1/preventitive/1">Atnaujinti</a>
+      </td>
     </tr>
     <tr>
       <td>Aleksotas</td>
       <td>Ekranų daviklių sutikrinimas</td>
       <td>2021-03-08</td>
+      <td>
+        <a href="/technician/screens/1/preventitive/1">Atnaujinti</a>
+      </td>
     </tr>
     <tr>
       <td>Aleksotas</td>
       <td>Ekranų kompiuterių būklė</td>
       <td>2021-03-07</td>
+      <td>
+        <a href="/technician/screens/1/preventitive/1">Atnaujinti</a>
+      </td>
     </tr>
   </tbody>
 </table>

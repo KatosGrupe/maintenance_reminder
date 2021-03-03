@@ -48,9 +48,12 @@ fn main() {
                                       views::technician::issues,
                                       views::technician::issues_register,
                                       views::technician::issues_solve,
-                                      views::technician::statistics,
-                                      views::technician::statistics_info,
+                                      views::technician::screens,
+                                      views::technician::screens_preventitives,
                                       views::technician::settings,
-                                      views::technician::settings_edit])
+                                      views::technician::settings_edit,
+                                      views::technician::statistics,
+                                      views::technician::statistics_info])
+        .mount("/email", routes![views::email::index])
         .launch();
 }

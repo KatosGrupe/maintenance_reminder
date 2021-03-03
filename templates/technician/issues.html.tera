@@ -4,9 +4,9 @@
 {% endblock custom_style %}
 
 {% block content %}
-<h1> Gedimai: </h1>
+<h1>Gedimai:</h1>
 
-<h2> Ekranai: </h2>
+<h2>Ekranai:</h2>
 
 <table>
   <colgroup>
@@ -51,7 +51,7 @@
   </tbody>
 </table>
 
-<h2> Kameros: </h2>
+<h2>Kameros:</h2>
 
 <table>
   <colgroup>

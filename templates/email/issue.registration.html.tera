@@ -1,0 +1,9 @@
+{% extends "email/base" %}
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% block content %}
+<textarea name="" id="" rows="" cols="" tabindex="">
+</textarea>
+{% endblock content %}

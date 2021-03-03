@@ -1,0 +1,59 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% block content %}
+<h1>Murava</h1>
+<p><strong>Darbas:</strong> Peržiūrėti iš priekinės pusės ar nėra perdegusių diodų, ir kitų gedimų kurių nesimato per kameras</p>
+<form>
+  <p>
+    Paskutinis tikrinimas: 2020-07-13
+  </p>
+  <p>
+    <label for="check">Patikrinimo data</label>
+    <input id="check" type="datetime-local" value="{{current_datetime}}">
+  </p>
+  <p>
+    <input type="submit" value="Patvirtinti">
+  </p>
+</form>
+<h2>Istorija</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Patikra</th>
+      <th>Laikas</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Ar reikia dažyti konstrukciją, ar nėra pažeidimų</td>
+    <td>2021-04-05</td>
+  </tr>
+  <tr>
+    <td>Peržiūrėti iš priekinės pusės ar nėra perdegusių diodų, ir kitų gedimų kurių nesimato per kameras</td>
+    <td>2021-04-05</td>
+  </tr>
+  <tr>
+    <td>Peržiūrėti ar nėra paukščių lizdų  konstrukcijoje</td>
+    <td>2021-04-05</td>
+  </tr>
+  <tr>
+    <td>Patikrinti ar sandarios automatų ir pc dėžės</td>
+    <td>2021-04-05</td>
+  </tr>
+  <tr>
+    <td>Patikrinti ekranų ryškumus vizualiai</td>
+    <td>2021-04-05</td>
+  </tr>
+  <tr>
+    <td>Ekrano davikliu sutikrinimas, programiškai</td>
+    <td>2021-04-05</td>
+  </tr>
+  <tr>
+    <td>Ekranų kompiuterių būklė, ar veikia team viewer, ar nemeta update lentelių, ar nėra pašalinių problemų</td>
+    <td>2021-04-05</td>
+  </tr>
+</table>
+
+{% endblock content %}

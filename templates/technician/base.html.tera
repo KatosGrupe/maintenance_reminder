@@ -4,10 +4,6 @@
 <title>Techniko vaizdas</title>
 
 {% block custom_style %}
-
-<style type="text/css" media="screen">
-</style>
-
 {% endblock custom_style %}
 
 {% endblock head %}
@@ -17,6 +13,7 @@
   <ul>
     <li><a href="/technician">Pagrindinis</a></li>
     <li><a href="/technician/cameras">Kameros</a></li>
+    <li><a href="/technician/screens">Ekranai</a></li>
     <li><a href="/technician/issues">Gedimai</a></li>
     <li><a href="/technician/inventory">Inventorius</a></li>
     <li><a href="/technician/statistics">Statistika</a></li>

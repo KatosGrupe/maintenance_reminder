@@ -1,0 +1,85 @@
+{% extends "email/base" %}
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% block content %}
+<p>
+  <label for="issue_registration">Klaidos registravimas</label><br>
+  <textarea name="issue_registration" id="issue_registration"
+            rows="20" cols="60">
+    From: gedimai@acm.lt
+    Header: Gedimas ekrane: Murava
+    ------------------------------------
+
+    Užregistruota klaida ekrane: Murava
+
+    Klaidos tipas: Juodas Ekranas
+
+    Gedimo laikas: 2021-02-25 12:50
+
+    Registracijos laikas: 2021-02-25 13:30
+
+    Papildoma informacija:
+        *Čia pildoma tolimesnė papildoma informacija
+        susijusi su ekrano gedimu, jei tokia egzistuoja*
+  </textarea>
+</p>
+<p>
+  <label for="issue_status_update">Pradėta tvarkyti</label><br>
+  <textarea name="issue_registration" id="issue_registration"
+            rows="20" cols="60">
+    From: gedimai@acm.lt
+    Header: Gedimas ekrane: Murava (Statusas)
+    ------------------------------------
+
+    Problema pradėta tvarkyti
+
+    Papildoma informacija:
+        *Čia pildoma tolimesnė papildoma informacija
+        susijusi su ekrano gedimu, jei tokia egzistuoja*
+  </textarea>
+</p>
+<p>
+  <label for="issue_status_update">Išspręsta</label><br>
+  <textarea name="issue_registration" id="issue_registration"
+            rows="20" cols="60">
+    From: gedimai@acm.lt
+    Header: Gedimas ekrane: Murava (Sutvarkyta)
+    ------------------------------------
+
+    Sprendimo laikas: 2021-02-28 13:00
+
+    Diagnozė: Elektros dingimas
+
+    Klaidos laikas: 2021-02-25 12:50
+
+    Klaidos tipas: Juodas ekranas
+
+    Papildoma informacija:
+        *Čia pildoma tolimesnė papildoma informacija
+        susijusi su ekrano gedimu, jei tokia egzistuoja*
+  </textarea>
+</p>
+<p>
+  <label for="issue_status_update">Inventoriaus priminimas<br>
+  Siunčiamas kas savaitę, jei kažkurių dalių yra likę mažai</label><br>
+  <textarea name="issue_registration" id="issue_registration"
+            rows="20" cols="60">
+    From: gedimai@acm.lt
+    Header: Inventoriaus trūkumas
+    ------------------------------------
+    Sveiki,
+
+    Trūksta šių inventoriaus dalių:
+
+    | Dalis        | Esamas kiekis | Minimalus kiekis |
+    |--------------+---------------+------------------|
+    | Moduliukas   |             3 |                5 |
+    | Kontroleris  |             0 |                1 |
+
+    Prašome pasirūpinti reikiamomis dalimis, siekiant užtrikinti
+    nenutrūkstamą ekranų darbą.
+  </textarea>
+</p>
+{% endblock content %}

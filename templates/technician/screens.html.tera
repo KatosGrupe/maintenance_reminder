@@ -1,0 +1,135 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style media="screen">
+  thead {
+      border-bottom: 3px solid #00000030;
+  }
+
+  tr.end {
+      border-bottom: 2px solid #00000020;
+  }
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<h1>Ekranai</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Ekranas</th>
+      <th>Priežiūros darbai</th>
+      <th>Laikas</th>
+    </tr>
+  </thead>
+  <tr>
+    <td rowspan="7">Murava</td>
+    <td>Ar reikia dažyti konstrukciją, ar nėra pažeidimų</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Peržiūrėti iš priekinės pusės ar nėra perdegusių diodų, ir kitų gedimų kurių nesimato per kameras</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Peržiūrėti ar nėra paukščių lizdų  konstrukcijoje</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Patikrinti ar sandarios automatų ir pc dėžės</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Patikrinti ekranų ryškumus vizualiai</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Ekrano davikliu sutikrinimas, programiškai</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr class="end">
+    <td>Ekranų kompiuterių būklė, ar veikia team viewer, ar nemeta update lentelių, ar nėra pašalinių problemų</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td rowspan="7">Aleksotas</td>
+    <td>Ar reikia dažyti konstrukciją, ar nėra pažeidimų</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Peržiūrėti iš priekinės pusės ar nėra perdegusių diodų, ir kitų gedimų kurių nesimato per kameras</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Peržiūrėti ar nėra paukščių lizdų  konstrukcijoje</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Patikrinti ar sandarios automatų ir pc dėžės</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Patikrinti ekranų ryškumus vizualiai</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Ekrano davikliu sutikrinimas, programiškai</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr class="end">
+    <td>Ekranų kompiuterių būklė, ar veikia team viewer, ar nemeta update lentelių, ar nėra pašalinių problemų</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td rowspan="7">Ir t.t.</td>
+    <td>Ar reikia dažyti konstrukciją, ar nėra pažeidimų</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Peržiūrėti iš priekinės pusės ar nėra perdegusių diodų, ir kitų gedimų kurių nesimato per kameras</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Peržiūrėti ar nėra paukščių lizdų  konstrukcijoje</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Patikrinti ar sandarios automatų ir pc dėžės</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Patikrinti ekranų ryškumus vizualiai</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr>
+    <td>Ekrano davikliu sutikrinimas, programiškai</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+  <tr class="end">
+    <td>Ekranų kompiuterių būklė, ar veikia team viewer, ar nemeta update lentelių, ar nėra pašalinių problemų</td>
+    <td>2021-04-05</td>
+    <td><a href="/technician/screens/1/preventitive/1">atnaujinti</a></td>
+  </tr>
+</table>
+
+{% endblock content %}

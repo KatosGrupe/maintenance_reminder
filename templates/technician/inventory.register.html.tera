@@ -1,8 +1,6 @@
 {% extends "technician/base" %}
 
 {% block custom_style %}
-<style type="text/css" media="screen">
-</style>
 {% endblock custom_style %}
 
 {% block content %}
@@ -15,10 +13,6 @@
   <p>
     <label for="location">Lokacija</label>
     <input type="text" id="location">(Autocomplete)
-  </p>
-  <p>
-    <label for="write_off">Nurašymo data</label>
-    <input type="date" id="write_off">(Today + 2 years)
   </p>
   <p>
     <label for="initial_count">Kiekis</label>

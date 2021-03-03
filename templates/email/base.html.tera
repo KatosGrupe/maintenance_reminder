@@ -1,0 +1,20 @@
+{% extends "base" %}
+
+{% block head %}
+<title>El. laiškų vaizdas</title>
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% endblock head %}
+
+{% block nav %}
+<nav>
+  <ul>
+    <li><a href="/">Atsijungti</a></li>
+  </ul>
+</nav>
+{% endblock nav %}
+
+{% block content %}
+{% endblock content %}
