@@ -6,6 +6,7 @@
 {% endblock custom_style %}
 
 {% block content %}
+<article>
 <h1>{{name}}</h1>
 <table>
   <colgroup>
@@ -36,4 +37,5 @@
   </tbody>
 </table>
 
+</article>
 {% endblock content %}

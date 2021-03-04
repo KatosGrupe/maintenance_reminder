@@ -26,6 +26,7 @@
 
           article.extended {
               max-width: 100%;
+              margin: 20px 20px auto;
           }
 
           h1 {

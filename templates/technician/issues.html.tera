@@ -4,6 +4,7 @@
 {% endblock custom_style %}
 
 {% block content %}
+<article>
 <h1>Gedimai:</h1>
 
 <h2>Ekranai:</h2>
@@ -95,4 +96,5 @@
     </tr>
   </tbody>
 </table>
+</article>
 {% endblock content %}

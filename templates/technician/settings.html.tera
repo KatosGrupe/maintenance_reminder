@@ -4,277 +4,279 @@
 {% endblock manager_custom_style %}
 
 {% block content %}
-<h1>Nustatymai</h1>
-{% include "email.settings" %}
+<article>
+  <h1>Nustatymai</h1>
+  {% include "email.settings" %}
 
-<h2>Profilaktiniai darbai:</h2>
+  <h2>Profilaktiniai darbai:</h2>
 
-<table>
-  <colgroup>
-    <col class="id">
-    <col class="name">
-    <col class="period">
-    <col class="control">
-  </colgroup>
-  <thead>
-    <tr>
-      <th scope="col">Id</th>
-      <th scope="col">Pavadinimas</th>
-      <th scope="col">Periodas</th>
-      <th scope="col">
-        <a href="/technician/settings/preventive/new">Registruoti</a>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Ar reikia dažyti konstrukciją, ar nėra pažeidimų</td>
-      <td>6 mėn</td>
-      <td>
-        <a href="/technician/settings/preventive/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Peržiūrėti iš priekinės pusės ar nėra perdegusių diodų, ir kitų gedimų kurių nesimato per kameras</td>
-      <td>3 mėn</td>
-      <td>
-        <a href="/technician/settings/preventive/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Peržiūrėti ar nėra paukščių lizdų  konstrukcijoje</td>
-      <td>6 mėn</td>
-      <td>
-        <a href="/technician/settings/preventive/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Patikrinti ar sandarios automatų ir pc dėžės</td>
-      <td>6 mėn</td>
-      <td>
-        <a href="/technician/settings/preventive/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Patikrinti ekranų ryškumus vizualiai</td>
-      <td>2 mėn</td>
-      <td>
-        <a href="/technician/settings/preventive/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Ekrano davikliu sutikrinimas, programiškai </td>
-      <td>2 mėn</td>
-      <td>
-        <a href="/technician/settings/preventive/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Ekranų kompiuterių būklė, ar veikia team viewer, ar nemeta update lentelių, ar nėra pašalinių problemų</td>
-      <td>1 mėn</td>
-      <td>
-        <a href="/technician/settings/preventive/1">info</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <colgroup>
+      <col class="id">
+      <col class="name">
+      <col class="period">
+      <col class="control">
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Pavadinimas</th>
+        <th scope="col">Periodas</th>
+        <th scope="col">
+          <a href="/technician/settings/preventive/new">Registruoti</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Ar reikia dažyti konstrukciją, ar nėra pažeidimų</td>
+        <td>6 mėn</td>
+        <td>
+          <a href="/technician/settings/preventive/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Peržiūrėti iš priekinės pusės ar nėra perdegusių diodų, ir kitų gedimų kurių nesimato per kameras</td>
+        <td>3 mėn</td>
+        <td>
+          <a href="/technician/settings/preventive/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Peržiūrėti ar nėra paukščių lizdų  konstrukcijoje</td>
+        <td>6 mėn</td>
+        <td>
+          <a href="/technician/settings/preventive/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Patikrinti ar sandarios automatų ir pc dėžės</td>
+        <td>6 mėn</td>
+        <td>
+          <a href="/technician/settings/preventive/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Patikrinti ekranų ryškumus vizualiai</td>
+        <td>2 mėn</td>
+        <td>
+          <a href="/technician/settings/preventive/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Ekrano davikliu sutikrinimas, programiškai </td>
+        <td>2 mėn</td>
+        <td>
+          <a href="/technician/settings/preventive/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Ekranų kompiuterių būklė, ar veikia team viewer, ar nemeta update lentelių, ar nėra pašalinių problemų</td>
+        <td>1 mėn</td>
+        <td>
+          <a href="/technician/settings/preventive/1">info</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-<h2>Kameros</h2>
-<h3>Problemos</h3>
-<table>
-  <colgroup>
-    <col class="id"></col>
-    <col class="name"></col>
-    <col class="control"></col>
-  </colgroup>
-  <thead>
-    <th scope="col">Id</th>
-    <th scope="col">Pavadinimas</th>
-    <th scope="col">
-      <a href="/technician/camera_issues/register">Registruoti</a>
-    </th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Nerodo</td>
-      <td>
-        <a href="/technician/camera_issues/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Blogas matomumas</td>
-      <td>
-        <a href="/technician/camera_issues/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Nėra vaizdo priartinimo</td>
-      <td>
-        <a href="/technician/camera_issues/1">info</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h3>Diagnozes</h3>
-<table>
-  <colgroup>
-    <col class="id"></col>
-    <col class="name"></col>
-    <col class="control"></col>
-  </colgroup>
-  <thead>
-    <th scope="col">Id</th>
-    <th scope="col">Pavadinimas</th>
-    <th scope="col">
-      <a href="/technician/camera_diagnoses/new">Registruoti</a>
-    </th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Neveikia internetas</td>
-      <td>
-        <a href="/technician/camera_diagnoses/new">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Nėra elektros</td>
-      <td>
-        <a href="/technician/camera_diagnoses/new">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Nusimušęs ryškumas</td>
-      <td>
-        <a href="/technician/camera_diagnoses/new">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Nusimušęs ryškumas</td>
-      <td>
-        <a href="/technician/camera_diagnoses/new">info</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h2>Ekranai</h2>
-<h3>Problemos</h3>
-<table>
-  <colgroup>
-    <col class="id"/>
-    <col class="name"/>
-    <col class="control"/>
-  </colgroup>
-  <thead>
-    <tr>
+  <h2>Kameros</h2>
+  <h3>Problemos</h3>
+  <table>
+    <colgroup>
+      <col class="id"></col>
+      <col class="name"></col>
+      <col class="control"></col>
+    </colgroup>
+    <thead>
       <th scope="col">Id</th>
       <th scope="col">Pavadinimas</th>
       <th scope="col">
-        <a href="/technician/screen_issues/new">Registruoti</a>
+        <a href="/technician/camera_issues/register">Registruoti</a>
       </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Juodas ekranas</td>
-      <td>
-        <a href="/technician/screen_issues/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Nerodo dalis ekrano</td>
-      <td>
-        <a href="/technician/screen_issues/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Skiriasi moduliukų spalva</td>
-      <td>
-        <a href="/technician/screen_issues/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Per ryškus ekranas</td>
-      <td>
-        <a href="/technician/screen_issues/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Per ryškus ekranas</td>
-      <td>
-        <a href="/technician/screen_issues/1">info</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h3>Diagnozės</h3>
-<table>
-  <colgroup>
-    <col class="id"></col>
-    <col class="name"></col>
-    <col class="control"></col>
-  </colgroup>
-  <thead>
-    <th scope="col">Id</th>
-    <th scope="col">Pavadinimas</th>
-    <th scope="col">
-      <a href="/technician/screen_diagnosis/register">Registruoti</a>
-    </th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Duomenų kabelis</td>
-      <td>
-        <a href="/technician/screen_diagnosis/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Moduliukas</td>
-      <td>
-        <a href="/technician/screen_diagnosis/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Receiving card</td>
-      <td>
-        <a href="/technician/screen_diagnosis/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Kompiuterio strigimas</td>
-      <td>
-        <a href="/technician/screen_diagnosis/1">info</a>
-      </td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Programos strigimas</td>
-      <td>
-        <a href="/technician/screen_diagnosis/1">info</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Nerodo</td>
+        <td>
+          <a href="/technician/camera_issues/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Blogas matomumas</td>
+        <td>
+          <a href="/technician/camera_issues/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Nėra vaizdo priartinimo</td>
+        <td>
+          <a href="/technician/camera_issues/1">info</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Diagnozes</h3>
+  <table>
+    <colgroup>
+      <col class="id"></col>
+      <col class="name"></col>
+      <col class="control"></col>
+    </colgroup>
+    <thead>
+      <th scope="col">Id</th>
+      <th scope="col">Pavadinimas</th>
+      <th scope="col">
+        <a href="/technician/camera_diagnoses/new">Registruoti</a>
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Neveikia internetas</td>
+        <td>
+          <a href="/technician/camera_diagnoses/new">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Nėra elektros</td>
+        <td>
+          <a href="/technician/camera_diagnoses/new">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Nusimušęs ryškumas</td>
+        <td>
+          <a href="/technician/camera_diagnoses/new">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Nusimušęs ryškumas</td>
+        <td>
+          <a href="/technician/camera_diagnoses/new">info</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Ekranai</h2>
+  <h3>Problemos</h3>
+  <table>
+    <colgroup>
+      <col class="id"/>
+      <col class="name"/>
+      <col class="control"/>
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Pavadinimas</th>
+        <th scope="col">
+          <a href="/technician/screen_issues/new">Registruoti</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Juodas ekranas</td>
+        <td>
+          <a href="/technician/screen_issues/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Nerodo dalis ekrano</td>
+        <td>
+          <a href="/technician/screen_issues/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Skiriasi moduliukų spalva</td>
+        <td>
+          <a href="/technician/screen_issues/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Per ryškus ekranas</td>
+        <td>
+          <a href="/technician/screen_issues/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Per ryškus ekranas</td>
+        <td>
+          <a href="/technician/screen_issues/1">info</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Diagnozės</h3>
+  <table>
+    <colgroup>
+      <col class="id"></col>
+      <col class="name"></col>
+      <col class="control"></col>
+    </colgroup>
+    <thead>
+      <th scope="col">Id</th>
+      <th scope="col">Pavadinimas</th>
+      <th scope="col">
+        <a href="/technician/screen_diagnosis/register">Registruoti</a>
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Duomenų kabelis</td>
+        <td>
+          <a href="/technician/screen_diagnosis/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Moduliukas</td>
+        <td>
+          <a href="/technician/screen_diagnosis/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Receiving card</td>
+        <td>
+          <a href="/technician/screen_diagnosis/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Kompiuterio strigimas</td>
+        <td>
+          <a href="/technician/screen_diagnosis/1">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Programos strigimas</td>
+        <td>
+          <a href="/technician/screen_diagnosis/1">info</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <article>
 {% endblock content %}

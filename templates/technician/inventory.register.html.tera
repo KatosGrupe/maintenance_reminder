@@ -4,22 +4,24 @@
 {% endblock custom_style %}
 
 {% block content %}
-<h1>Registruoti naują daiktą</h1>
-<form>
-  <p>
-    <label for="name">Pavadinimas</label>
-    <input type="text" id="name">(Autocomplete)
-  </p>
-  <p>
-    <label for="location">Lokacija</label>
-    <input type="text" id="location">(Autocomplete)
-  </p>
-  <p>
-    <label for="initial_count">Kiekis</label>
-    <input type="number" step="1" id="initial_count" value="1">
-  </p>
-  <p>
-    <input type="submit" value="Pateikti">
-  </p>
-</form>
+<article>
+  <h1>Registruoti naują daiktą</h1>
+  <form>
+    <p>
+      <label for="name">Pavadinimas</label>
+      <input type="text" id="name">(Autocomplete)
+    </p>
+    <p>
+      <label for="location">Lokacija</label>
+      <input type="text" id="location">(Autocomplete)
+    </p>
+    <p>
+      <label for="initial_count">Kiekis</label>
+      <input type="number" step="1" id="initial_count" value="1">
+    </p>
+    <p>
+      <input type="submit" value="Pateikti">
+    </p>
+  </form>
+</article>
 {% endblock content %}

@@ -5,6 +5,7 @@
   td {
       vertical-align: top;
   }
+
   
   
 </style>
@@ -13,6 +14,19 @@
 {% block content %}
 <article class="extended">
 <h1>Istorijos lentelė</h1>
+<form>
+  <p>
+    <label for="date-from">Nuo</label>
+    <input type="date" id="date-from" value="">
+  </p>
+  <p>
+    <label for="date-to">Iki</label>
+    <input type="date" id="date-to" value="">
+  </p>
+  <p>
+    <input type="submit" value="Filtruoti">
+  </p>
+</form>
 <table>
   <thead>
     <tr>
