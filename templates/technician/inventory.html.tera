@@ -10,6 +10,7 @@
 {% endblock custom_style %}
 
 {% block content %}
+<article>
 <h1> Inventorius: </h1>
 <table>
   <colgroup>
@@ -51,4 +52,5 @@
     </tr>
   </tbody>
 </table>
+</article>
 {% endblock content %}

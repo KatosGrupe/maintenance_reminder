@@ -36,6 +36,8 @@ fn main() {
                                    views::manager::issues_register,
                                    views::manager::statistics,
                                    views::manager::settings])
+        .mount("/super_manager", routes![views::super_manager::index,
+                                         views::super_manager::statistics])
         .mount("/technician", routes![views::technician::cameras,
                                       views::technician::cameras_register,
                                       views::technician::cameras_edit,

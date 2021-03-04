@@ -6,6 +6,7 @@
 {% endblock custom_style %}
 
 {% block content %}
+<article>
 <h1>Statistika: Murava</h1>
 <p>Kokia statistika rodyt?</p>
 <table>
@@ -31,4 +32,5 @@
   </tbody>
 </table>
 
+</article>
 {% endblock content %}

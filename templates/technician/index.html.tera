@@ -13,6 +13,7 @@
 {% endblock custom_style %}
 
 {% block content %}
+<article>
 <h1> Pagrindinis </h1>
 
 <section>
@@ -128,4 +129,5 @@
   </tbody>
 </table>
 </section>
+</article>
 {% endblock content %}

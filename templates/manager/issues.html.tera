@@ -32,6 +32,7 @@
 {% endblock manager_custom_style %}
 
 {% block content %}
+<article>
 <h1>Gedimai</h1>
 <p>
 <table>
@@ -111,4 +112,5 @@
   </tbody>
 </table>
 </p>
+<article>
 {% endblock content %}

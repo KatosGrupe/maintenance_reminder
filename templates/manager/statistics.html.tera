@@ -9,6 +9,7 @@
 {% endblock manager_custom_style %}
 
 {% block content %}
+<article>
 <h1>Statistika</h1>
 <form>
   <p>
@@ -130,5 +131,5 @@
     </tr>
   </tbody>
 </table>
-
+</article>
 {% endblock content %}

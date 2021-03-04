@@ -4,6 +4,7 @@
 {% endblock custom_style %}
 
 {% block content %}
+<article>
 <h1>Murava</h1>
 <p><strong>Darbas:</strong> Peržiūrėti iš priekinės pusės ar nėra perdegusių diodų, ir kitų gedimų kurių nesimato per kameras</p>
 <form>
@@ -56,4 +57,5 @@
   </tr>
 </table>
 
+</article>
 {% endblock content %}

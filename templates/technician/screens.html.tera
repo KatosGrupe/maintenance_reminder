@@ -13,6 +13,7 @@
 {% endblock custom_style %}
 
 {% block content %}
+<article>
 <h1>Ekranai</h1>
 <table>
   <thead>
@@ -132,4 +133,5 @@
   </tr>
 </table>
 
+</article>
 {% endblock content %}

@@ -4,6 +4,7 @@
 {% endblock custom_style %}
 
 {% block content %}
+<article>
 <h1>Registruoti naują kamerą</h1>
 <form>
   <p>
@@ -14,5 +15,5 @@
     <input type="submit" value="Pateikti">
   </p>
 </form>
-
+</article>
 {% endblock content %}

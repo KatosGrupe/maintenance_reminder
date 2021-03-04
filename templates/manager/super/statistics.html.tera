@@ -1,0 +1,99 @@
+{% extends "manager/super/base" %}
+
+{% block manager_custom_style %}
+<style media="screen">
+  td {
+      vertical-align: top;
+  }
+  
+  
+</style>
+{% endblock manager_custom_style %}
+
+{% block content %}
+<article class="extended">
+<h1>Istorijos lentelė</h1>
+<table>
+  <thead>
+    <tr>
+      <td>Užduotis</td>
+      <td>Ar reikia dažyti konstrukciją, ar nėra pažeidimų</td>
+      <td>Peržiūrėti iš priekinės pusės ar nėra perdegusių diodų, ir kitų gedimų kurių nesimato per kameras</td>
+      <td>Peržiūrėti ar nėra paukščių lizdų  konstrukcijoje</td>
+      <td>Patikrinti ar sandarios automatų ir pc dėžės</td>
+      <td>Patikrinti ekranų ryškumus vizualiai</td>
+      <td>Ekrano davikliu sutikrinimas, programiškai </td>
+      <td>Ekranų kompiuterių būklė, ar veikia team viewer, ar nemeta update lentelių, ar nėra pašalinių problemų</td>
+    </tr>
+    <tr>
+      <td>Periodiškumas</td>
+      <td>6 mėn</td>
+      <td>3 mėn</td>
+      <td>6 mėn</td>
+      <td>6 mėn</td>
+      <td>2 mėn</td>
+      <td>2 mėn</td>
+      <td>1 mėn</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Murava</td>
+      <td>2020-03-05 EC<br>2020-05-31 VB</td>
+      <td>2020-02-05 EC<br>2020-06-31 VB<br>2020-10-13 EC</td>
+      <td>2020-01-05 EC<br>2020-07-31 VB</td>
+      <td>2020-02-14 EC<br>2020-08-11 VB</td>
+      <td>2020-02-05 VB<br>2020-03-12 VB<br>2020-05-23 VB<br>
+        2020-08-05 VB<br>2020-10-31 VB<br>2020-11-13 EC</td>
+      <td>2020-02-05 VB<br>2020-03-12 VB<br>2020-05-23 VB<br>
+        2020-08-05 VB<br>2020-10-31 VB<br>2020-11-13 EC</td>
+      <td>2020-01-05 VB<br>2020-02-12 VB<br>2020-03-23 VB<br>
+        2020-04-05 VB<br>2020-05-31 VB<br>2020-06-13 EC<br>
+        2020-07-05 VB<br>2020-08-12 VB<br>2020-09-23 VB<br>
+        2020-10-05 VB<br>2020-11-31 VB<br>2020-12-13 EC</td>
+    </tr>
+    <tr>
+      <td>Aleksotas</td>
+      <td>2020-03-05 EC<br>2020-05-31 VB</td>
+      <td>2020-02-05 EC<br>2020-06-31 VB<br>2020-10-13 EC</td>
+      <td>2020-01-05 EC<br>2020-07-31 VB</td>
+      <td>2020-02-14 EC<br>2020-08-11 VB</td>
+      <td>2020-02-05 VB<br>2020-03-12 VB<br>2020-05-23 VB<br>
+        2020-08-05 VB<br>2020-10-31 VB<br>2020-11-13 EC</td>
+      <td>2020-02-05 VB<br>2020-03-12 VB<br>2020-05-23 VB<br>
+        2020-08-05 VB<br>2020-10-31 VB<br>2020-11-13 EC</td>
+      <td>2020-01-05 VB<br>2020-02-12 VB<br>2020-03-23 VB<br>
+        2020-04-05 VB<br>2020-05-31 VB<br>2020-06-13 EC<br>
+        2020-07-05 VB<br>2020-08-12 VB<br>2020-09-23 VB<br>
+        2020-10-05 VB<br>2020-11-31 VB<br>2020-12-13 EC</td>
+    </tr>
+    <tr>
+      <td>Akropolis</td>
+      <td>2020-03-05 EC<br>2020-05-31 VB</td>
+      <td>2020-02-05 EC<br>2020-06-31 VB<br>2020-10-13 EC</td>
+      <td>2020-01-05 EC<br>2020-07-31 VB</td>
+      <td>2020-02-14 EC<br>2020-08-11 VB</td>
+      <td>2020-02-05 VB<br>2020-03-12 VB<br>2020-05-23 VB<br>
+        2020-08-05 VB<br>2020-10-31 VB<br>2020-11-13 EC</td>
+      <td>2020-02-05 VB<br>2020-03-12 VB<br>2020-05-23 VB<br>
+        2020-08-05 VB<br>2020-10-31 VB<br>2020-11-13 EC</td>
+      <td>2020-01-05 VB<br>2020-02-12 VB<br>2020-03-23 VB<br>
+        2020-04-05 VB<br>2020-05-31 VB<br>2020-06-13 EC<br>
+        2020-07-05 VB<br>2020-08-12 VB<br>2020-09-23 VB<br>
+        2020-10-05 VB<br>2020-11-31 VB<br>2020-12-13 EC</td>
+    </tr>
+    <tr>
+      <td>ir t.t.</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+</article>
+{% endblock content %}
+

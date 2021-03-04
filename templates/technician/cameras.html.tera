@@ -4,6 +4,7 @@
 {% endblock custom_style %}
 
 {% block content %}
+<article>
 <h1> Kameros: </h1>
 <table>
   <colgroup>
@@ -42,5 +43,5 @@
     </tr>
   </tbody>
 </table>
-
+</article>
 {% endblock content %}

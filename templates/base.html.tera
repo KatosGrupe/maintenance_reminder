@@ -16,12 +16,16 @@
               font-family: Arial, Helvetica, Sans-serif;
               line-height: 1.2;
               background-color: #F8F8F8;
-              max-width: 650px;
               margin: 40px auto;
           }
 
           article {
+              max-width: 650px;
               margin: 20px auto;
+          }
+
+          article.extended {
+              max-width: 100%;
           }
 
           h1 {
@@ -56,6 +60,7 @@
               list-style: none;
               background-color: #EEE;
               font-size: 1.2em;
+              text-align: center;
           }
 
           nav ul li {
@@ -182,12 +187,10 @@
          </ul>
          {% endblock nav %}
        </nav>
+       {% block content %}
        <article>
-         {% block content %}
-         <h1>Technikų web'o maketas</h1>
-         {% endblock content %}
+          <h1>Technikų web'o maketas</h1>
        </article>
-       <footer>
-       </footer>
+       {% endblock content %}
     </body>
 </html>

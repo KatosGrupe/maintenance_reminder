@@ -4,6 +4,8 @@
 {% endblock manager_custom_style %}
 
 {% block content %}
+<article>
 <h1>Nustatymai</h1>
 {% include "email.settings" %}
+</article>
 {% endblock content %}

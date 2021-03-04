@@ -4,6 +4,7 @@
 {% endblock custom_style %}
 
 {% block content %}
+<article>
 <h1> Gedimas: </h1>
 <form>
   <p>
@@ -37,4 +38,5 @@
     <input type="submit" value="Registruoti">
   </p>
 </form>
+</article>
 {% endblock content %}
