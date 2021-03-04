@@ -8,4 +8,5 @@
 <h1>Nustatymai</h1>
 {% include "email.settings" %}
 </article>
+
 {% endblock content %}

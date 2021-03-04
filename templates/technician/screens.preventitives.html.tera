@@ -15,7 +15,10 @@
       <label for="check">Patikrinimo data</label>
       <input id="check" type="datetime-local" value="{{current_datetime}}">
     </p>
-
+    <p>
+      <label for="next_value">Kita tikrinimo data</label>
+      <input type="datetime-local" id="next_value" value="{{next_datetime}}">
+    </p>
     <p>
       <input type="submit" value="Patvirtinti">
     </p>

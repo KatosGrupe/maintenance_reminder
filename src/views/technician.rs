@@ -1,3 +1,4 @@
+use chrono::Duration;
 use rocket_contrib::templates::Template;
 use serde::Serialize;
 
@@ -213,10 +214,18 @@ pub fn screens() -> Template {
     Template::render("technician/screens", &context)
 }
 
+#[derive(Serialize)]
+struct ScreenPreventiveContext {
+    current_datetime: String,
+    next_datetime: String
+}
+
 #[get("/screens/<_screen_id>/preventitive/<_preventitive_id>")]
 pub fn screens_preventitives(_screen_id: i32, _preventitive_id: i32) -> Template {
-    let context = IssuesSolveContext {
+    let context = ScreenPreventiveContext {
         current_datetime: Local::now().format("%Y-%m-%dT%H:%M:%S").to_string(),
+        next_datetime: (Local::now() + Duration::days(180)).format("%Y-%m-%dT%H:%M:%S").to_string()
+
     };
     Template::render("technician/screens.preventitives", &context)
 }
