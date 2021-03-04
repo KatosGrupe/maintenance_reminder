@@ -27,7 +27,23 @@
              value="{{to_date}}">
     </p>
     <p>
-      <input type="submit" value="Atnaujinti">
+      <label for="issue_class_1">Juodas ekranas</label>
+      <input type="checkbox" id="issue_class_1" checked>
+    </p>
+    <p>
+      <label for="issue_class_2">Nerodo dalis ekrano</label>
+      <input type="checkbox" id="issue_class_2" checked>
+    </p>
+    <p>
+      <label for="issue_class_3">Skiriasi moduliukų spalva</label>
+      <input type="checkbox" id="issue_class_3" checked>
+    </p>
+    <p>
+      <label for="issue_class_4">Per ryškus ekranas</label>
+      <input type="checkbox" id="issue_class_4" checked>
+    </p>
+    <p>
+      <input type="submit" value="Filtruoti">
     </p>
   </form>
   <table>

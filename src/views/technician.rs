@@ -185,9 +185,19 @@ pub fn inventory_info(id: i32) -> Template {
     Template::render("technician/inventory.info", &context)
 }
 
+#[derive(Serialize)]
+struct StatisticsContext {
+    from_date: String,
+    to_date: String
+
+}
+
 #[get("/statistics")]
 pub fn statistics() -> Template {
-    let context = Context {};
+    let context = StatisticsContext {
+        from_date: "2020-01-01".to_string(),
+        to_date: "2020-12-31".to_string()
+    };
     Template::render("technician/statistics", &context)
 }
 
