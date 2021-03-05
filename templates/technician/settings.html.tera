@@ -271,5 +271,36 @@
       </tr>
     </tbody>
   </table>
-  <article>
+  <h2>Inventoriaus grupės</h2>
+  <table>
+    <colgroup>
+      <col class="id"></col>
+      <col class="name"></col>
+      <col class="control"></col>
+    </colgroup>
+    <thead>
+      <th scope="col">Id</th>
+      <th scope="col">Pavadinimas</th>
+      <th scope="col">
+        <a href="/">Registruoti</a>
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>ozo, spaudos rumu, ukmerges, pilaites, ateities</td>
+        <td>
+          <a href="/">info</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>akropolis</td>
+        <td>
+          <a href="/">info</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</article>
 {% endblock content %}

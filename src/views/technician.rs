@@ -186,6 +186,12 @@ pub fn inventory_info(id: i32) -> Template {
     Template::render("technician/inventory.info", &context)
 }
 
+#[get("/inventory/<_part_id>/<_id>")]
+pub fn inventory_single_info(_part_id: i32,_id: i32) -> Template {
+    let context = Context{};
+    Template::render("technician/inventory.single.info", &context)
+}
+
 #[derive(Serialize)]
 struct StatisticsContext {
     from_date: String,

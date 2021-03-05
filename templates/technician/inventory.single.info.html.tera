@@ -1,0 +1,28 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% block content %}
+<article>
+<h1>Dalis: {pavadinimas}</h1>
+<form>
+<p>
+  <label for="location">Lokacija</label>
+  <input type="textbox" id="location" value="{autocomplete}">
+</p>
+  <p>
+    <input type="submit" value="Atnaujinti">
+  </p>
+</form>
+<h2> Kiti veiksmai: </h2>
+<form>
+  <p>
+    <input type="button" value="Šalinti">
+  </p>
+</form>
+
+
+
+</article>
+{% endblock content %}

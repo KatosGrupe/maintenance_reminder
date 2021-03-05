@@ -8,6 +8,10 @@
   <h1>Registruoti naują daiktą</h1>
   <form>
     <p>
+      <label for="group">Grupė</label>
+      <input type="text" id="group">(Autocomplete)
+    </p>
+    <p>
       <label for="name">Pavadinimas</label>
       <input type="text" id="name">(Autocomplete)
     </p>

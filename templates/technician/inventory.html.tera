@@ -6,46 +6,96 @@
       background-color: #FFFFFF80;
       color: #00000090;
   }
+
+  tr.error {
+      color: #FF000090;
+  }
+
+  thead {
+      border-bottom: 3px solid #00000030;
+  }
+
+  tr.end {
+      border-bottom: 2px solid #00000020;
+  }
   </style>
 {% endblock custom_style %}
 
 {% block content %}
-<article>
+<article class="extended">
 <h1> Inventorius: </h1>
 <table>
   <colgroup>
-    <col class="id" />
+    <col class="group" />
     <col class="name" />
     <col class="date" />
     <col class="action" />
   </colgroup>
   <thead>
-    <th scope="col">ID</th>
+    <th scope="col">Grupė</th>
     <th scope="col">Dalis</th>
-    <th scope="col">Likutis</th>
+    <th scope="col">Likutis (Min)</th>
     <th scope="col"><a href="/technician/inventory/register">Registruoti</a></th>
   </thead>
   <tbody>
     <tr>
-      <td>27</td>
+      <td rowspan="4">
+        ozo, spaudos rumu, ukmerges, pilaites, ateities
+      </td>
       <td>LED plokštė S/N: xxxxxxxxx</td>
-      <td>4</td>
+      <td>4 (1)</td>
       <td>
         <a href="/technician/inventory/27">Info</a>
       </td>
     </tr>
     <tr>
-      <td>22</td>
       <td>RAM DDR3 2200MHz</td>
-      <td>2</td>
+      <td>2 (1)</td>
       <td>
         <a href="/technician/inventory/22">Info</a>
       </td>
     </tr>
     <tr class="no_remain">
-      <td>13</td>
       <td>AIO kompas HP Intel i5</td>
-      <td>0</td>
+      <td>0 (0)</td>
+      <td>
+        <a href="/technician/inventory/13">Info</a>
+      </td>
+    </tr>
+    <tr class="end error">
+      <td>Moduliukas</td>
+      <td>0 (4)</td>
+      <td>
+        <a href="/technician/inventory/13">Info</a>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4">
+        akropolis
+      </td>
+      <td>LED plokštė S/N: xxxxxxxxx</td>
+      <td>4 (1)</td>
+      <td>
+        <a href="/technician/inventory/27">Info</a>
+      </td>
+    </tr>
+    <tr>
+      <td>RAM DDR3 2200MHz</td>
+      <td>2 (1)</td>
+      <td>
+        <a href="/technician/inventory/22">Info</a>
+      </td>
+    </tr>
+    <tr class="no_remain">
+      <td>AIO kompas HP Intel i5</td>
+      <td>0 (0)</td>
+      <td>
+        <a href="/technician/inventory/13">Info</a>
+      </td>
+    </tr>
+    <tr class="end error">
+      <td>Moduliukas</td>
+      <td>0 (4)</td>
       <td>
         <a href="/technician/inventory/13">Info</a>
       </td>

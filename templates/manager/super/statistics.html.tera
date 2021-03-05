@@ -5,8 +5,6 @@
   td {
       vertical-align: top;
   }
-
-  
   
 </style>
 {% endblock manager_custom_style %}

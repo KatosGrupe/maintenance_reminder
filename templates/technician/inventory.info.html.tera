@@ -1,8 +1,6 @@
 {% extends "technician/base" %}
 
 {% block custom_style %}
-<style type="text/css" media="screen">
-</style>
 {% endblock custom_style %}
 
 {% block content %}
@@ -12,13 +10,15 @@
   <colgroup>
     <col class="id">
     <col class="location">
-    <col class="laikas">
+    <col class="time">
+    <col class="user">
     <col class="controls">
   </colgroup>
   <thead>
     <th scope="col">Id</th>
     <th scope="col">Lokacija</th>
     <th scope="col">Laikas</th>
+    <th scope="col">Asmuo</th>
     <th scope="col">
       <a href="/technician/inventory/register">Registruoti</a>
     </th>
@@ -29,6 +29,7 @@
       <td>{{ location.id }}</td>
       <td>{{ location.location }}</td>
       <td>{{ location.lc_time }}</td>
+      <td>Vytautas</td>
       <td>
         <a href="/technician/inventory/3/{{location.id}}">Peržiūrėti</a>
       </td>
