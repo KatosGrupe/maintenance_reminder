@@ -1,0 +1,35 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% block content %}
+<article>
+  <h1> Darbas </h1>
+  <form>
+    <p>
+      <label for="task">Užduotis</label>
+      <input type="textbox" id="task" value="Perdažyti konstrukcija"
+             disabled>
+    </p>
+    <p>
+      <label for="location">Vieta</label>
+      <input type="textbox" id="location" value="{autocomplete}"
+             disabled>
+    </p>
+    <p>
+      <label for="responsible_person">Atsakingas asmuo</label>
+      <input type="textbox" id="responsible_person"
+             value="{autocomplete}" disabled>
+    </p>
+    <p>
+      <label for="date">Priskirimo laikas</label>
+      <input type="date" id="date" value="{{current_datetime}}"
+             disabled>
+    </p>
+    <p>
+      <input type="submit" value="Pažymėti kaip užbaigta">
+    </p>
+  </form>
+</article>
+{% endblock content %}

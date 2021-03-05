@@ -1,0 +1,49 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style media="screen">
+  td.registered {
+      color: red
+  }
+  td.done {
+      color: green;
+  }
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<article>
+<h1> Darbai </h1>
+<table>
+  <thead>
+    <tr>
+      <td>Užduotis</td>
+      <td>Vieta</td>
+      <td>Atsakingas asmuo</td>
+      <td>Priskirimo laikas</td>
+      <td>Statusas</td>
+      <td><a href="/technician/tasks/register">Registruoti</a></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Perdažyti konstrukciją</td>
+      <td>Ekranas: Murava</td>
+      <td>Vytautas Bataitis</td>
+      <td>2021-03-14</td>
+      <td class="registered">Užregistruota</td>
+      <td><a href="/technician/tasks/1">Info</a></td>
+    </tr>
+    <tr>
+      <td>Perdažyti konstrukciją</td>
+      <td>Ekranas: Murava</td>
+      <td>Vytautas Bataitis</td>
+      <td>2021-03-14</td>
+      <td class="done">Atlikta</td>
+      <td><a href="/technician/tasks/2">Info</a></td>
+    </tr>
+  </tbody>
+</table>
+
+</article>
+{% endblock content %}

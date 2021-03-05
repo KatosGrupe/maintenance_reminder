@@ -249,3 +249,27 @@ pub fn settings_edit() -> Template {
     };
     Template::render("technician/settings.edit", &context)
 }
+
+#[get("/tasks")]
+pub fn tasks() -> Template {
+    let context = Context {
+
+    };
+    Template::render("technician/tasks", &context)
+}
+
+#[get("/tasks/register")]
+pub fn tasks_register() -> Template {
+    let context = IssuesSolveContext {
+        current_datetime: Local::now().format("%Y-%m-%d").to_string(),
+    };
+    Template::render("technician/tasks.register", &context)
+}
+
+#[get("/tasks/<_id>")]
+pub fn tasks_info(_id: i32) -> Template {
+    let context = IssuesSolveContext {
+        current_datetime: Local::now().format("%Y-%m-%d").to_string(),
+    };
+    Template::render("technician/tasks.info", &context)
+}

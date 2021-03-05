@@ -1,0 +1,40 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style media="screen">
+  td.registered {
+      color: red
+  }
+  td.done {
+      color: green;
+  }
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<article>
+  <h1> Darbai </h1>
+  <form>
+    <p>
+      <label for="task">Užduotis</label>
+      <input type="textbox" id="task" value="">
+    </p>
+    <p>
+      <label for="location">Vieta</label>
+      <input type="textbox" id="location" value="{autocomplet}">
+    </p>
+    <p>
+      <label for="responsible_person">Atsakingas asmuo</label>
+      <input type="textbox" id="responsible_person"
+             value="{autocomplete}">
+    </p>
+    <p>
+      <label for="date">Priskirimo laikas</label>
+      <input type="date" id="date" value="{{current_datetime}}">
+    </p>
+    <p>
+      <input type="submit" value="Registruoti">
+    </p>
+  </form>
+</article>
+{% endblock content %}
