@@ -15,5 +15,7 @@ WORKDIR /www
 COPY --from=builder /root/target/release/maintenance_reminder ./maintenance_reminder
 ADD templates ./templates
 ADD static ./static
+ADD Rocket.toml ./Rocket.toml
+ADD cert ./cert
 EXPOSE 8000
 CMD ["./maintenance_reminder"]
