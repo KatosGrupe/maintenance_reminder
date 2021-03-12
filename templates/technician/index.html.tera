@@ -14,10 +14,10 @@
 
 {% block content %}
 <article>
-<h1> Pagrindinis </h1>
+<h1>Pagrindinis</h1>
 
 <section>
-<h2>Esami gedimai:</h2>
+<h2>Esami gedimai</h2>
 <p>
   <table>
     <colgroup>
@@ -28,7 +28,9 @@
     <thead>
       <th scope="col">Ekranas</th>
       <th scope="col">Statusas</th>
-      <th scope="col">Info</th>
+      <th scope="col">
+        <a href="/technician/issues/register">Registruoti</a>
+      </th>
     </thead>
     <tbody>
       <tr>
@@ -55,7 +57,9 @@
     <thead>
       <th scope="col">Kamera</th>
       <th scope="col">Statusas</th>
-      <th scope="col">Info</th>
+      <th scope="col">
+        <a href="/technician/issues/register">Registruoti</a>
+      </th>
     </thead>
     <tbody>
       <tr>
