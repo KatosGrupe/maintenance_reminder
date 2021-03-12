@@ -145,27 +145,32 @@
           }
         </style>
         <style media="screen">
-          label.tooltip span.tooltiptext {
-              visibility: hidden;
-              background-color: #FFF;
-              color: #222;
-              text-align: center;
-              padding: 5px 10px 5px 10px; 
-              border: solid 1px #000;
-              border-radius: 3px;
-
-              position: absolute;
-              z-index: 1;
-              bottom: 100%;
-              left: 50%;
-          }
-
-          label.tooltip {
+          .tooltip {
+              color: #00a;
               position: relative;
+              text-decoration: none;
           }
 
-          label.tooltip:hover .tooltiptext {
+          .tooltip:hover .tooltiptext {
               visibility: visible;
+          }
+
+          .tooltip .tooltiptext:target {
+              visibility: visible;
+          }
+
+          .tooltiptext {
+              background-color: #EEE;
+              border: 1px solid;
+              border-radius: 3px;
+              position: absolute;
+              left: 50%;
+              margin-left: -50%;
+              padding: 5px;
+              top: 100%;
+              visibility: hidden;
+              width: 100%;
+              z-index: 1;
           }
         </style>
     </head>

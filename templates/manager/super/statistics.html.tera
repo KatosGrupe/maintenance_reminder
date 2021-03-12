@@ -5,6 +5,7 @@
   td {
       vertical-align: top;
   }
+
   
 </style>
 {% endblock manager_custom_style %}
@@ -51,7 +52,11 @@
   <tbody>
     <tr>
       <td>Murava</td>
-      <td>2020-03-05 EC<br>2020-05-31 VB</td>
+      <td>
+        <a href="#preventative_task_1" class="tooltip">2020-03-05 EC
+          <span class="tooltiptext" id="preventative_task_1">Reikia aptvarkyti lizdus</span>
+        </a>
+        <br>2020-05-31 VB</td>
       <td>2020-02-05 EC<br>2020-06-31 VB<br>2020-10-13 EC</td>
       <td>2020-01-05 EC<br>2020-07-31 VB</td>
       <td>2020-02-14 EC<br>2020-08-11 VB</td>
@@ -59,9 +64,26 @@
         2020-08-05 VB<br>2020-10-31 VB<br>2020-11-13 EC</td>
       <td>2020-02-05 VB<br>2020-03-12 VB<br>2020-05-23 VB<br>
         2020-08-05 VB<br>2020-10-31 VB<br>2020-11-13 EC</td>
-      <td>2020-01-05 VB<br>2020-02-12 VB<br>2020-03-23 VB<br>
+      <td>
+        <a href="#preventative_task_2" class="tooltip">2020-01-01 EC
+          <span class="tooltiptext"
+                id="preventative_task_2">Pastebėjimas 2</span>
+        </a><br>
+        2020-01-05 VB<br>2020-02-12 VB<br>2020-03-23 VB<br>
         2020-04-05 VB<br>2020-05-31 VB<br>2020-06-13 EC<br>
+        <a href="#preventative_task_3" class="tooltip">2020-06-29 EC
+          <span class="tooltiptext"
+                id="preventative_task_3">Pastebėjimas 3</span>
+        </a><br>
         2020-07-05 VB<br>2020-08-12 VB<br>2020-09-23 VB<br>
+        <a href="#preventative_task_4" class="tooltip">2020-09-25 EC
+          <span class="tooltiptext"
+                id="preventative_task_4">Pastebėjimas 4</span>
+        </a><br>
+        <a href="#preventative_task_5" class="tooltip">2020-10-01 EC
+          <span class="tooltiptext"
+                id="preventative_task_5">Pastebėjimas 5</span>
+          </a><br>
         2020-10-05 VB<br>2020-11-31 VB<br>2020-12-13 EC</td>
     </tr>
     <tr>
