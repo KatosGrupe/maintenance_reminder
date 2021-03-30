@@ -16,4 +16,4 @@ simplelog = ""
 [dependencies.rocket_contrib]
 version = ""
 default-features = false
-features = ["serve", "tera_templates"]
+features = ["diesel_postgres_pool", "serve", "tera_templates"]

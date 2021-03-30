@@ -1,8 +1,10 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
 #[macro_use] extern crate rocket;
+#[macro_use] extern crate rocket_contrib;
 
 use rocket_contrib::templates::Template;
+use rocket_contrib::databases::diesel;
 use serde::Serialize;
 use rocket_contrib::serve::StaticFiles;
 
@@ -23,12 +25,14 @@ fn template() -> Template {
     Template::render("index", &context)
 }
 
+#[database("maintenance_db")]
+struct MaintenanceDb(diesel::PgConnection);
+
 
 fn main() {
-    println!("Hello, world!");
-
     rocket::ignite()
         .attach(Template::fairing())
+        .attach(MaintenanceDb::fairing())
         .mount("/public", StaticFiles::from("static"))
         .mount("/", routes![hello, template])
         .mount("/manager", routes![views::manager::index,

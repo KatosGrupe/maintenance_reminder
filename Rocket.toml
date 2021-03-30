@@ -1,3 +1,6 @@
 [global.tls]
 certs = "cert/fullchain.pem"
 key = "cert/privkey.pem"
+
+[global.databases.maintenance_db]
+url = "postgres://maintenance_user:X9maintenancepasw@localhost/maintenance_reminder"
