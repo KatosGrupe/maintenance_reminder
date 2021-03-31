@@ -1,0 +1,19 @@
+{% extends "base" %}
+
+{% block content %}
+<article>
+  <form method="post" action="/login">
+    <p>
+      <label for="email">El. paštas</label>
+      <input type="text" id="email" name="email" value="" placeholder="vardas@acm.lt">
+    </p>
+    <p>
+      <label for="password">Slaptažodis</label>
+      <input type="password" id="password" name="password" value="">
+    </p>
+    <p>
+      <input type="submit" value="login">
+    </p>
+  </form>
+</article>
+{% endblock content %}

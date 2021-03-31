@@ -10,9 +10,9 @@ use rocket_contrib::serve::StaticFiles;
 
 pub mod views;
 
-#[get("/hello")]
-fn hello() -> String {
-    format!("Hello_world")
+#[get("/test")]
+fn test() -> String {
+    format!("The server is alive!")
 }
 
 #[derive(Serialize)]
@@ -26,7 +26,7 @@ fn template() -> Template {
 }
 
 #[database("maintenance_db")]
-struct MaintenanceDb(diesel::PgConnection);
+pub struct MaintenanceDb(diesel::PgConnection);
 
 
 fn main() {
@@ -34,7 +34,11 @@ fn main() {
         .attach(Template::fairing())
         .attach(MaintenanceDb::fairing())
         .mount("/public", StaticFiles::from("static"))
-        .mount("/", routes![hello, template])
+        .mount("/", routes![test,
+                            template,
+                            views::login::login,
+                            views::login::login_action,
+        ])
         .mount("/manager", routes![views::manager::index,
                                    views::manager::issues,
                                    views::manager::issues_register,
