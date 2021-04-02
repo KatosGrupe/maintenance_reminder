@@ -17,7 +17,7 @@ $$;
 create function check_user(email text, password text)
 returns boolean as $$
 begin
-   if exists (select 1 from users.u where u.email = email)
+   if exists (select 1 from users u where u.email = email and u.password = crypt(password))
    then
     return true;
    end if;
@@ -25,3 +25,13 @@ begin
 end
 $$
 language plpgsql;
+
+
+call add_user('ignas@kata.lt', 'Test123');
+
+select * from users;
+
+
+select 1 from users u
+where u.email = 'ignas@kata.lt'
+      and u.password = crypt('Test123', u.password);

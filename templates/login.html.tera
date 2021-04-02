@@ -2,6 +2,7 @@
 
 {% block content %}
 <article>
+  {% include "message" %}
   <form method="post" action="/login">
     <p>
       <label for="email">El. paštas</label>

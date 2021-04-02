@@ -19,7 +19,7 @@
     <li><a href="/technician/statistics">Statistika</a></li>
     <li><a href="/technician/settings">Nustatymai</a></li>
     <li><a href="/technician/tasks">Darbai</a></li>
-    <li><a href="/">Atsijungti</a></li>
+    <li><a href="/logout">Atsijungti</a></li>
   </ul>
 </nav>
 {% endblock nav %}

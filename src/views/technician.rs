@@ -1,3 +1,4 @@
+use crate::Technician;
 use chrono::Duration;
 use rocket_contrib::templates::Template;
 use serde::Serialize;
@@ -68,7 +69,7 @@ pub fn cameras_issues_edit(id: i32) -> Template {
 }
 
 #[get("/")]
-pub fn index() -> Template {
+pub fn index(_technician: Technician) -> Template {
     let context = Context {};
     Template::render("technician/index", &context)
 }

@@ -8,6 +8,7 @@ edition = "2018"
 
 [dependencies]
 chrono = ""
+diesel = ""
 log = ""
 rocket = { version = "0.4.7", features = ["tls"] }
 serde = {version = "", features = ["derive"]}
