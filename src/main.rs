@@ -82,6 +82,14 @@ impl User {
     fn is_technician(&self) -> bool {
         true
     }
+
+    fn is_manager(&self) -> bool {
+        true
+    }
+
+    fn is_analyst(&self) -> bool {
+        true
+    }
 }
 
 impl<'a, 'r> FromRequest<'a, 'r> for User {
@@ -106,6 +114,38 @@ impl<'a, 'r> FromRequest<'a, 'r> for Technician {
         let user = request.guard::<User>()?;
         if user.is_technician() {
             return Success(Technician{});
+        }
+
+        Forward(())
+    }
+}
+
+pub struct Manager {}
+
+impl<'a, 'r> FromRequest<'a, 'r> for Manager {
+    type Error = ();
+
+    fn from_request(request: &'a rocket::Request<'r>)
+                    -> Outcome<Self, Self::Error> {
+        let user = request.guard::<User>()?;
+        if user.is_manager() {
+            return Success(Manager{});
+        }
+
+        Forward(())
+    }
+}
+
+pub struct Analyst {}
+
+impl<'a, 'r> FromRequest<'a, 'r> for Analyst {
+    type Error = ();
+
+    fn from_request(request: &'a rocket::Request<'r>)
+                    -> Outcome<Self, Self::Error> {
+        let user = request.guard::<User>()?;
+        if user.is_analyst() {
+            return Success(Analyst{});
         }
 
         Forward(())
