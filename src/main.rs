@@ -5,12 +5,10 @@
 #[macro_use] extern crate diesel;
 
 use rocket::Outcome::Forward;
-use rocket::outcome::IntoOutcome;
 use rocket::Outcome::Success;
 use rocket::request::FromRequest;
 use rocket::request::Outcome;
 use rocket::request::Request;
-use rocket::request;
 use rocket_contrib::serve::StaticFiles;
 use rocket_contrib::templates::Template;
 use serde::Serialize;
