@@ -195,7 +195,7 @@
        </nav>
        {% block content %}
        <article>
-          <h1>Technikų web'o maketas</h1>
+          <h1>Technikų informacinė sistema</h1>
        </article>
        {% endblock content %}
     </body>
