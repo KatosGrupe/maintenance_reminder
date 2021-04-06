@@ -184,14 +184,7 @@
           </p>
       <![endif]-->
        <nav>
-         {% block nav %}
-         <ul>
-           <li><a href="/manager">Prisijungti kaip vadybininkui</a></li>
-           <li><a href="/super_manager">Prisijungti kaip super-vadybininkui</a><li>
-           <li><a href="/technician">Prisijungti kaip technikui</a></li>
-           <li><a href="/email">Laiškų šablonai</a><li>
-         </ul>
-         {% endblock nav %}
+         {% include "navigation" %}
        </nav>
        {% block content %}
        <article>
