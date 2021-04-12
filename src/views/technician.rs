@@ -1,4 +1,4 @@
-use crate::Technician;
+use crate::login::Technician;
 use chrono::Duration;
 use rocket_contrib::templates::Template;
 use serde::Serialize;
