@@ -184,7 +184,11 @@
           </p>
       <![endif]-->
        <nav>
-         {% include "navigation" %}
+         <ul>
+           {% block navigation %}
+           {% endblock navigation %}
+           <li><a href="/logout">Atsijungti</a></li>
+         </ul>
        </nav>
        {% block content %}
        <article>
