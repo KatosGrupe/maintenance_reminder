@@ -5,6 +5,14 @@ create table users (
   password text not null
 );
 
+create type user_permission as enum ('technician', 'manager', 'analyst');
+
+create table user_permissions (
+  user_id Integer references users(id),
+  permission user_permission,
+  primary key (user_id, permission)
+);
+
 create procedure add_user(email text, password text)
 language sql
 as $$
@@ -26,12 +34,7 @@ end
 $$
 language plpgsql;
 
-
+-- populate initial server values (TESTING PURPOSES ONLY)
 call add_user('ignas@kata.lt', 'Test123');
-
-select * from users;
-
-
-select 1 from users u
-where u.email = 'ignas@kata.lt'
-      and u.password = crypt('Test123', u.password);
+insert into user_permissions
+values (1, 'technician');
