@@ -5,11 +5,12 @@ create table users (
   password text not null
 );
 
-create type user_permission as enum ('technician', 'manager', 'analyst');
-
 create table user_permissions (
-  user_id Integer references users(id),
-  permission user_permission,
+  user_id Integer references users(id) not null,
+  permission Integer not null,
+  constraint permission_check check (permission in (1, -- Technician
+  2, -- Manager,
+  3)), --Analyst
   primary key (user_id, permission)
 );
 
@@ -37,4 +38,4 @@ language plpgsql;
 -- populate initial server values (TESTING PURPOSES ONLY)
 call add_user('ignas@kata.lt', 'Test123');
 insert into user_permissions
-values (1, 'technician');
+values (1, 1);
