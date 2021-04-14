@@ -1,0 +1,12 @@
+{% extends "base" %}
+
+{% block head %}
+<title>Techniko vaizdas</title>
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% endblock head %}
+
+{% block content %}
+{% endblock content %}
