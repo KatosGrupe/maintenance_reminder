@@ -1,0 +1,26 @@
+       <nav>
+         <ul>
+           {% if user %}
+             {% if user.is_technician %}
+               <li><a href="/">Pagrindinis</a></li>
+               <li><a href="/cameras">Kameros</a></li>
+               <li><a href="/screens">Ekranai</a></li>
+               <li><a href="/issues">Gedimai</a></li>
+               <li><a href="/inventory">Inventorius</a></li>
+               <li><a href="/statistics">Statistika</a></li>
+               <li><a href="/settings">Nustatymai</a></li>
+               <li><a href="/tasks">Darbai</a></li>
+             {% elif user.is_manager %}
+               <li><a href="/issues">Gedimai</a></li>
+               <li><a href="/statistics">Statistika</a></li>
+               <li><a href="/settings">Nustatymai</a></li>
+             {% endif %}
+             {% if user.is_analyst %}
+               <li><a href="/super_manager/statistics">Istorija</a></li>
+             {% endif %}
+             <li><a href="/logout">Atsijungti</a></li>
+           {% else %}
+             <li><a href="/">Pagrindinis</a></li>
+           {% endif %}
+         </ul>
+       </nav>

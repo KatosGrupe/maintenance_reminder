@@ -183,13 +183,7 @@
             kad veiktų visas tinklalapio funkcionalumas.
           </p>
       <![endif]-->
-       <nav>
-         <ul>
-           {% block navigation %}
-           {% endblock navigation %}
-           <li><a href="/logout">Atsijungti</a></li>
-         </ul>
-       </nav>
+       {% include "navigation" %}
        {% block content %}
        <article>
           <h1>Technikų informacinė sistema</h1>
