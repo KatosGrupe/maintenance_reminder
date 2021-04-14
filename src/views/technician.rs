@@ -1,8 +1,21 @@
-use crate::login::User;
-use crate::login::Technician;
 use chrono::Duration;
+use crate::login::Technician;
+use crate::login::User;
 use rocket_contrib::templates::Template;
 use serde::Serialize;
+
+#[derive(Serialize)]
+struct UserContext {
+    user: User
+}
+
+#[get("/")]
+pub fn index(technician: Technician) -> Template {
+    let context = UserContext {
+        user: technician.user
+    };
+    Template::render("technician/index", &context)
+}
 
 #[derive(Serialize)]
 struct Context {
@@ -71,18 +84,6 @@ pub fn cameras_issues_edit(id: i32) -> Template {
     }
 }
 
-#[derive(Serialize)]
-struct UserContext {
-    user: User
-}
-
-#[get("/")]
-pub fn index(technician: Technician) -> Template {
-    let context = UserContext {
-        user: technician.user
-    };
-    Template::render("technician/index", &context)
-}
 
 #[get("/issues")]
 pub fn issues() -> Template {
