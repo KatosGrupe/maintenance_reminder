@@ -30,6 +30,8 @@ fn main() {
         .attach(MaintenanceDb::fairing())
         .mount("/public", StaticFiles::from("static"))
         .mount("/", routes![test,
+                            views::camera::cameras,
+                            views::camera::cameras_redirect_unauthorized,
                             views::login::login,
                             views::login::login_action,
                             views::login::logout_action,

@@ -1,0 +1,47 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% block content %}
+<article>
+<h1> Kameros: </h1>
+<table>
+  <colgroup>
+    <col class="id" />
+    <col class="name" />
+    <col class="action" />
+  </colgroup>
+  <thead>
+    <th scope="col">Id</th>
+    <th scope="col">Kamera</th>
+    <th scope="col">
+      <a href="/technician/cameras/register">Registruoti</a>
+    </th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4</td>
+      <td>Aleksoto ekrano kamera</td>
+      <td>
+        <a href="/technician/cameras/4">Keisti</a>
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Kauno ofiso kamera </td>
+      <td>
+        <a href="/technician/cameras/5">Keisti</a>
+      </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Ateities ekrano kamera </td>
+      <td>
+        <a href="/technician/cameras/6">Keisti</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</article>
+{% endblock content %}
