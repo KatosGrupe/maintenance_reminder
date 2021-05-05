@@ -20,27 +20,15 @@
     </th>
   </thead>
   <tbody>
+    {% for camera in cameras %}
     <tr>
-      <td>4</td>
-      <td>Aleksoto ekrano kamera</td>
+      <td>{{camera.id}}</td>
+      <td>{{camera.name}}</td>
       <td>
-        <a href="/technician/cameras/4">Keisti</a>
+        <a href="/technician/cameras/{{camera.id}}">Keisti</a>
       </td>
     </tr>
-    <tr>
-      <td>5</td>
-      <td>Kauno ofiso kamera </td>
-      <td>
-        <a href="/technician/cameras/5">Keisti</a>
-      </td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Ateities ekrano kamera </td>
-      <td>
-        <a href="/technician/cameras/6">Keisti</a>
-      </td>
-    </tr>
+    {% endfor %}
   </tbody>
 </table>
 </article>
