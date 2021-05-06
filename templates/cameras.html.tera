@@ -16,7 +16,7 @@
     <th scope="col">Id</th>
     <th scope="col">Kamera</th>
     <th scope="col">
-      <a href="/technician/cameras/register">Registruoti</a>
+      <a href="/cameras/0">Registruoti</a>
     </th>
   </thead>
   <tbody>
@@ -25,7 +25,7 @@
       <td>{{camera.id}}</td>
       <td>{{camera.name}}</td>
       <td>
-        <a href="/technician/cameras/{{camera.id}}">Keisti</a>
+        <a href="/cameras/{{camera.id}}">Keisti</a>
       </td>
     </tr>
     {% endfor %}

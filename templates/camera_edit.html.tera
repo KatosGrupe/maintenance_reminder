@@ -1,0 +1,38 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+<style media="screen">
+  h2 {
+      font-size: 1.2em;
+  }
+  input.other[type="submit"] {
+      display: inline-block;
+      margin-left: 0px;
+  }
+</style>
+{% endblock custom_style %}
+
+{% block content %}
+<article>
+<h1> Kamera </h1>
+<form method="post">
+  <p>
+    <label for="name">Pavadinimas</label>
+    <input type="text"
+           name="name"
+           id="name"
+           value="{{name}}">
+  </p>
+  <p>
+    <input type="submit" value="Pateikti">
+  </p>
+</form>
+
+<h2> Kiti veiksmai </h2>
+<form method="post">
+  <p>
+    <input class="other" type="submit" value="Trinti">
+  </p>
+</form>
+</article>
+{% endblock content %}
