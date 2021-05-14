@@ -1,0 +1,31 @@
+{% extends "technician/base" %}
+
+{% block custom_style %}
+{% endblock custom_style %}
+
+{% block content %}
+<article>
+<h1> Ekranai: </h1>
+<table>
+  <colgroup>
+    <col class="name" />
+    <col class="action" />
+  </colgroup>
+  <thead>
+    <th scope="col">Ekranas</th>
+    <th scope="col">
+    </th>
+  </thead>
+  <tbody>
+    {% for screen in screens %}
+    <tr>
+      <td>{{screen.name}}</td>
+      <td>
+        <a href="/screens/{{screen.id}}">Veiksmai</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</article>
+{% endblock content %}

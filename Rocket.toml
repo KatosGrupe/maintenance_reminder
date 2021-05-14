@@ -4,3 +4,8 @@ key = "cert/privkey.pem"
 
 [global.databases.maintenance_db]
 url = "postgres://maintenance_user:X9maintenancepasw@localhost/maintenance_reminder"
+
+[global.aurora_api_config]
+url = "http://127.0.0.1:3816"
+user = "test"
+key = "test"

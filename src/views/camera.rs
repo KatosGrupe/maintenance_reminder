@@ -4,6 +4,7 @@ use crate::login::User;
 use rocket::response::Redirect;
 use rocket_contrib::templates::Template;
 use serde::Serialize;
+use std::path::PathBuf;
 
 #[derive(Serialize)]
 struct UserContext {
@@ -19,8 +20,8 @@ pub fn cameras(technician: Technician, db: MaintenanceDb) -> Template {
     Template::render("cameras", &context)
 }
 
-#[get("/cameras", rank = 2)]
-pub fn cameras_redirect_unauthorized() -> Redirect {
+#[get("/cameras/<_path..>", rank = 2)]
+pub fn cameras_redirect_unauthorized(_path: PathBuf) -> Redirect {
     Redirect::to(uri!(crate::views::login::login: "Neautorizuotas vartotojas"))
 }
 
